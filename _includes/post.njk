@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+---
+
+<div>
+    <h3>
+        <a href="{{ post.url }}"># {{ title }}</a>
+    </h3>
+    <p>
+        <a href="/">&lt; go back</a>
+    </p>
+    <time>{{ page.date | htmlDateString }}</time>
+    {{ content  | safe }}
+
+</div>
