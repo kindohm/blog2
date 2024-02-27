@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://kindohm.com/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Mike Hodnick&#39;s Blog</title>
+        <link>https://kindohm.com/</link>
+        <atom:link href="https://kindohm.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <description></description>
+        <language>en</language>
+            <item>
+                <title>first</title>
+                <link>https://kindohm.com/blog/2023-02-27-first/</link>
+                <description>&lt;p&gt;I&#39;m Mike. I&#39;ve been a software engineer since 1998. My
+biggest interest in life is making experimental music with
+electronics and computers. I also love backpacking/camping/hiking
+and I try to be a better chef every day.&lt;/p&gt;
+&lt;p&gt;I don&#39;t know if I have much to say here on this blog, but yet
+I also feel like I have a story to tell. Or maybe this&#39;ll just
+be a dump for bits that I don&#39;t want to forget.&lt;/p&gt;
+&lt;p&gt;Back in the 2000&#39;s I ran my own blog that ran on .TEXT
+and then &lt;a href=&quot;https://haacked.com/archive/2005/05/04/announcing-subtext.aspx/&quot;&gt;Subtext&lt;/a&gt;.
+I amassed over 1000 posts on that blog but I eventually abandoned it.&lt;/p&gt;
+&lt;p&gt;I currently work as a software engineer, doing a lot of React
+and nodejs work. Prior to my javascript-centric life I did a
+lot of .NET dev with c#. The one constant has been the web though,
+and I don&#39;t really care much about what language I use as long
+as I&#39;m productive.&lt;/p&gt;
+&lt;p&gt;Creative coding is more fun than work coding, which is where
+my musical side comes in. I compose and perform music using
+the &lt;a href=&quot;https://tidalcycles.org/&quot;&gt;TidalCycles&lt;/a&gt;
+livecoding environment. TidalCycles, or just &amp;quot;Tidal&amp;quot;, allows
+you to sequence samples, or sequence synthesizers over MIDI.
+Tidal is the end all sequencer that can do nearly anything
+you can imagine.&lt;/p&gt;
+&lt;p&gt;In my musical endeavors I&#39;ve been lucky to have traveled and
+performed in the USA and internationally in Europe and Canada.
+I&#39;ve performed at events like the Algorithmic Art Assembly
+(San Francisco), Sound of Stockholm, the International
+Conference on Computer Music (Limerick), Algomech (Sheffield),
+among others.&lt;/p&gt;
+&lt;p&gt;Not sure where this blog is going to take me. Expect anything:
+a breadth of topics; posts ranging from one sentence to
+many paragraphs. No idea what to expect.&lt;/p&gt;
+</description>
+                <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+                <dc:creator>Mike Hodnick</dc:creator>
+                <guid>https://kindohm.com/blog/2023-02-27-first/</guid>
+            </item>
+    </channel>
+</rss>
