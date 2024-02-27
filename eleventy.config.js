@@ -10,6 +10,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const path = require('path')
+const Image = require("@11ty/eleventy-img");
 
 // const pluginDrafts = require("./eleventy.config.drafts.js");
 // const pluginImages = require("./eleventy.config.images.js");
@@ -22,6 +24,8 @@ module.exports = function (eleventyConfig) {
     // "./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
   });
 
+  // eleventyConfig.addPassthroughCopy("**/*.png");
+
   // Run Eleventy when these files change:
   // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
@@ -30,7 +34,7 @@ module.exports = function (eleventyConfig) {
 
   // App plugins
   // eleventyConfig.addPlugin(pluginDrafts);
-  //   eleventyConfig.addPlugin(pluginImages);
+  // eleventyConfig.addPlugin(pluginImages);
 
   // Official plugins
   eleventyConfig.addPlugin(pluginRss);
@@ -72,6 +76,34 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
+  eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
+    // Prepend the image src with the full directory `inputPath`:
+    let imageSrc = `${path.dirname(this.page.inputPath)}/${src}`;
+
+    let metadata = await Image(imageSrc, {
+      widths: [300, 600],
+      // Write processed images to the correct `outputPath`
+      outputDir: path.dirname(this.page.outputPath),
+      // Prepend the correct path to the image `src` value
+      urlPath: this.page.url,
+    });
+
+    // let metadata = await Image(src, {
+    // 	widths: [300, 600],
+    // 	formats: ["avif", "jpeg"]
+    // });
+
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+    };
+
+    // You bet we throw an error on a missing alt (alt="" works okay)
+    return Image.generateHTML(metadata, imageAttributes);
   });
 
   // // Get the first `n` elements of a collection.

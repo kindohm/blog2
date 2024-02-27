@@ -2,7 +2,7 @@
 layout: layout.njk
 ---
 
-<div>
+<article>
     <h3>
         <a href="{{ post.url }}"># {{ title }}</a>
     </h3>
@@ -12,4 +12,4 @@ layout: layout.njk
     <time>{{ page.date | htmlDateString }}</time>
     {{ content  | safe }}
 
-</div>
+</article>
