@@ -1,3 +1,7 @@
+const isProduction = process.env.NODE_ENV === `production`;
+
+console.log("isProduction", isProduction);
+
 const { DateTime } = require("luxon");
 // const markdownItAnchor = require("markdown-it-anchor");
 
@@ -151,6 +155,6 @@ module.exports = function (eleventyConfig) {
     // When paired with the HTML <base> plugin https://www.11ty.dev/docs/plugins/html-base/
     // it will transform any absolute URLs in your HTML to include this
     // folder name and does **not** affect where things go in the output folder.
-    pathPrefix: "/",
+    pathPrefix: isProduction ? "/blog2/" : "/",
   };
 };
