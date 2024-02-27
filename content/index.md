@@ -1,5 +1,5 @@
 ---
-title: indexxxx
+title: Mike Hodnick's Blog
 layout: layout.njk
 ---
 
