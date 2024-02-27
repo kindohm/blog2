@@ -3,7 +3,10 @@ title: indexxxx
 layout: layout.njk
 ---
 
-<h3>Hi, this is <a href="https://kindohm.com">Mike Hodnick's</a> blog. <a href="/why">Why?</a></h3>
+<div style="display: flex; gap: 1rem;">
+<h1>hi, this is <a href="https://kindohm.com">Mike Hodnick's</a> blog.</h1>
+<h3><a href="/why">why?</a></h3>
+</div>
 
 {%- for post in collections.blog -%}
 
