@@ -36,8 +36,30 @@ pre {
   overflow-x: auto;
 }
 
+code {
+  background-color: #eee;
+  color: #ff6666
+}
+
+pre code {
+  color: #444;
+}
+
 footer {
   margin-top: 3rem;
   font-size: 12px;
   color: #999;
 }
+
+h2::before {
+  content: "## ";
+}
+
+h3::before {
+  content: "### ";
+}
+
+.no-before::before {
+  content: none;
+}
+
