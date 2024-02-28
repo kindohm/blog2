@@ -1,0 +1,25 @@
+---
+layout: layouts/home.njk
+---
+
+<div style="display: flex; gap: 1rem;">
+	<h1>hi, this is <a href="https://kindohm.com">Mike Hodnick's</a> blog.</h1>
+	<h3 class="no-before">
+		<a href="/why">why?</a>
+	</h3>
+</div>
+
+{%- for entry in collections.posts | reverse%}
+	<article>
+		<p>
+			---</p>
+		<p>
+			<a href="{{ entry.url }}">
+				<h2>{{ entry.data | realTitle }}</h2>
+			</a>
+		</p>
+		<div>
+			{{entry.content | safe}}
+		</div>
+	</article>
+{%- endfor %}
