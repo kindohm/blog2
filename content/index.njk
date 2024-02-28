@@ -18,6 +18,10 @@ layout: layouts/home.njk
 				<h2>{{ entry.data | realTitle }}</h2>
 			</a>
 		</p>
+			<p>
+		<time>{{ entry.date | htmlDateString }}</time>
+	</p>
+
 		<div>
 			{{entry.content | safe}}
 		</div>

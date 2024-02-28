@@ -1,14 +1,17 @@
 ---
 layout: layouts/base.njk
 ---
+<p>
+	<a href="/">&lt; go back</a>
+</p>
+
 <article>
 	<h2>
 		<a href="{{ post.url }}">{{ title }}</a>
 	</h2>
 	<p>
-		<a href="/">&lt; go back</a>
+		<time>{{ page.date | htmlDateString }}</time>
 	</p>
-	<time>{{ page.date | htmlDateString }}</time>
 	{{ content  | safe }}
 
 </article>
