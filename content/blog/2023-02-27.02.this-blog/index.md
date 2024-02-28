@@ -80,5 +80,5 @@ jobs:
                 publish_dir: ./_site
 ```
 
-Unfortunately I haven't figured out how to get fenced code blocks
-to render correctly when they have blank lines.
+~~Unfortunately I haven't figured out how to get fenced code blocks
+to render correctly when they have blank lines.~~
