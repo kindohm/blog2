@@ -4,12 +4,22 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/blog2/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/blog2/"/>
-	<updated>2024-02-27T00:00:00Z</updated>
+	<updated>2024-02-28T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title></title>
+		<link href="https://kindohm.com/blog2/blog/2024/2024-02-28.01.inspired-by/"/>
+		<updated>2024-02-28T00:00:00Z</updated>
+		<id>https://kindohm.com/blog2/blog/2024/2024-02-28.01.inspired-by/</id>
+		<content type="html">&lt;p&gt;This blog was inspired by my pal
+&lt;a href=&quot;https://zapplebee.online/&quot;&gt;zapplebee&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title></title>
