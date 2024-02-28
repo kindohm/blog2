@@ -4,7 +4,7 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/blog2/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/blog2/"/>
-	<updated>2023-02-27T00:00:00Z</updated>
+	<updated>2024-02-27T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
@@ -13,9 +13,9 @@
 	
 	<entry>
 		<title></title>
-		<link href="https://kindohm.com/blog2/blog/2023-02-27.03.ipad/"/>
-		<updated>2023-02-27T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2023-02-27.03.ipad/</id>
+		<link href="https://kindohm.com/blog2/blog/2024/2024-02-27.03.ipad/"/>
+		<updated>2024-02-27T00:00:00Z</updated>
+		<id>https://kindohm.com/blog2/blog/2024/2024-02-27.03.ipad/</id>
 		<content type="html">&lt;p&gt;One thing i wanted to try was creating posts on the iPad.&lt;/p&gt;
 &lt;p&gt;I&#39;m using the Termius app to ssh into my server, where i can
 author posts and fully interact with the repo.&lt;/p&gt;
@@ -26,11 +26,11 @@ linux on iPad, but was too bare bones for my liking.&lt;/p&gt;
 	
 	<entry>
 		<title>this blog</title>
-		<link href="https://kindohm.com/blog2/blog/2023-02-27.02.this-blog/"/>
-		<updated>2023-02-27T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2023-02-27.02.this-blog/</id>
+		<link href="https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/"/>
+		<updated>2024-02-27T00:00:00Z</updated>
+		<id>https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/</id>
 		<content type="html">&lt;p&gt;A bit of info about how I built this blog:&lt;/p&gt;
-&lt;h3 id=&quot;static-site-generator&quot; tabindex=&quot;-1&quot;&gt;static site generator &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2023-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;static-site-generator&quot; tabindex=&quot;-1&quot;&gt;static site generator &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I&#39;m using &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt;
 for static site generation. I&#39;ve been a fan of 11ty for a while
 and was already familiar with it, so I just kept using it.&lt;/p&gt;
@@ -51,18 +51,18 @@ speaks for itself 🤷, but that&#39;s kinda disingenuous.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;I also added &lt;a href=&quot;https://kindohm.com/blog2/rss.xml&quot;&gt;rss&lt;/a&gt; and &lt;a href=&quot;https://kindohm.com/blog2/atom.xml&quot;&gt;atom&lt;/a&gt;
 feeds using the &lt;code&gt;@11ty/eleventy-plugin-rss&lt;/code&gt; library.&lt;/p&gt;
-&lt;h3 id=&quot;mobile-screen-sizes&quot; tabindex=&quot;-1&quot;&gt;mobile / screen sizes &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2023-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;mobile-screen-sizes&quot; tabindex=&quot;-1&quot;&gt;mobile / screen sizes &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;There&#39;s no nav, columns, or anything funky about the layout here, so
 it just fine on a mobile screen out of the box:&lt;/p&gt;
 &lt;img src=&quot;https://kindohm.com/blog2/img/BUy4_ydavp-600.png&quot; alt=&quot;mobile&quot; view=&quot;&quot;&gt;
-&lt;h3 id=&quot;colocated-images&quot; tabindex=&quot;-1&quot;&gt;colocated images &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2023-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;colocated-images&quot; tabindex=&quot;-1&quot;&gt;colocated images &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Colocating images with posts in Eleventy wasn&#39;t intuitive to figure
 out. I referenced these items to accomplish it:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://gfscott.com/blog/eleventy-img-without-central-image-directory/&quot;&gt;Using the Eleventy Image plugin without a central image folder&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/docs/plugins/image/#asynchronous-shortcode&quot;&gt;Eleventy image shortcode&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;build-deploy-hosting&quot; tabindex=&quot;-1&quot;&gt;build/deploy/hosting &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2023-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;build-deploy-hosting&quot; tabindex=&quot;-1&quot;&gt;build/deploy/hosting &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The source code for this blog is located on github.com, so I&#39;m just using github actions
 and a &lt;code&gt;gh-pages&lt;/code&gt; branch to host the site.&lt;/p&gt;
 &lt;p&gt;Building a static site with a &lt;code&gt;yarn&lt;/code&gt; command is pretty trivial in a github action. After that,
@@ -99,9 +99,9 @@ to render correctly when they have blank lines.&lt;/s&gt;&lt;/p&gt;
 	
 	<entry>
 		<title>first</title>
-		<link href="https://kindohm.com/blog2/blog/2023-02-27.01.first/"/>
-		<updated>2023-02-27T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2023-02-27.01.first/</id>
+		<link href="https://kindohm.com/blog2/blog/2024/2024-02-27.01.first/"/>
+		<updated>2024-02-27T00:00:00Z</updated>
+		<id>https://kindohm.com/blog2/blog/2024/2024-02-27.01.first/</id>
 		<content type="html">&lt;p&gt;I&#39;m Mike. I&#39;ve been a software engineer since 1998. My
 biggest interest in life is making experimental music with
 electronics and computers. I also love backpacking/camping/hiking
