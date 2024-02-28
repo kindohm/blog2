@@ -14,12 +14,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "20.x"
+          node-version: "16.x"
 
       - run: yarn
 
-      - run: yarn add sharp --ignore-engines
-      
       - run: yarn run build:prod
 
       - name: Deploy
