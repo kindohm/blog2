@@ -8,4 +8,11 @@ module.exports = {
     email: "mike@kindohm.com",
     url: "https://kindohm.com",
   },
+  risks: [
+    "dry mouth",
+    "sudden death or dismemberment",
+    "night sweats",
+    "drowsiness",
+    "dizziness",
+  ],
 };
