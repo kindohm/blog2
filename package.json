@@ -5,7 +5,8 @@
   "scripts": {
     "build": "yarn eleventy",
     "build:prod": "yarn eleventy --pathprefix=/blog2/",
-    "dev": "yarn eleventy --serve --quiet"
+    "dev": "yarn eleventy --serve --quiet",
+    "clean": "rm -rf _site"
   },
   "author": {
     "name": "Mike Hodnick",
