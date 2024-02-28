@@ -1,24 +1,258 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mike Hodnick&#39;s Blog</title>
-        <link href="/blog2/styles.css" rel="stylesheet">
-    </head>
-    <body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mike Hodnick&#39;s Blog</title>
+		<meta name="description" content="Dropping stuff here so I don&#39;t forget.">
+		<link rel="alternate" href="/blog2/feed/feed.xml" type="application/atom+xml" title="Mike Hodnick&#39;s Blog">
+		<link rel="alternate" href="/blog2/feed/feed.json" type="application/json" title="Mike Hodnick&#39;s Blog">
+		<style>
+			* { box-sizing: border-box; }
+body {
+	font-family: monospace;
+	text-align: center;
+	color: #444;
+}
 
-        <div class="container">
-            <main>
-                <div style="display: flex; gap: 1rem;">
-<h1>hi, this is <a href="https://kindohm.com">Mike Hodnick's</a> blog.</h1>
-<h3 class="no-before"><a href="/blog2/why">why?</a></h3>
-</div><article>
-  <p>---</p>
-  <h2><a href="/blog2/blog/2023-02-27.02.this-blog/">this blog</a></h2>
-  <p><time>2023-02-27</time></p>
-  <p>A bit of info about how I built this blog:</p>
-<h3>static site generator</h3>
+body,
+p,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 14px;
+}
+
+.container {
+	margin: auto;
+	text-align: left;
+	max-width: 600px;
+}
+
+article img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 1rem;
+	font-weight: normal;
+}
+
+pre {
+	background-color: #eee;
+	padding: 0.5rem;
+	overflow-x: auto;
+}
+
+code {
+	background-color: #eee;
+	color: #ff6666;
+}
+
+pre code {
+	color: #444;
+}
+
+footer {
+	margin-top: 3rem;
+	font-size: 12px;
+	color: #999;
+}
+
+h2::before {
+	content: "## ";
+}
+
+h3::before {
+	content: "### ";
+}
+
+.no-before::before {
+	content: none;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+			<main id="skip">
+				
+
+<div style="display: flex; gap: 1rem;">
+	<h1>hi, this is <a href="https://kindohm.com">Mike Hodnick's</a> blog.</h1>
+	<h3 class="no-before">
+		<a href="/blog2/why">why?</a>
+	</h3>
+</div>
+	<article>
+		<p>
+			---</p>
+		<p>
+			<a href="/blog2/blog/2023-02-27.03.ipad/">
+				<h2>2023-02-27</h2>
+			</a>
+		</p>
+		<div>
+			<p>One thing i wanted to try was creating posts on the iPad.</p>
+<p>I'm using the Termius app to ssh into my server, where i can
+author posts and fully interact with the repo.</p>
+<p>I also tried the iSh app on iOS, which is basically Alpine
+linux on iPad, but was too bare bones for my liking.</p>
+
+		</div>
+	</article>
+	<article>
+		<p>
+			---</p>
+		<p>
+			<a href="/blog2/blog/2023-02-27.02.this-blog/">
+				<h2>this blog</h2>
+			</a>
+		</p>
+		<div>
+			<p>A bit of info about how I built this blog:</p>
+<h3 id="static-site-generator" tabindex="-1">static site generator <a class="header-anchor" href="#static-site-generator">#</a></h3>
 <p>I'm using <a href="https://www.11ty.dev/">Eleventy</a>
 for static site generation. I've been a fan of 11ty for a while
 and was already familiar with it, so I just kept using it.</p>
@@ -39,63 +273,62 @@ speaks for itself 🤷, but that's kinda disingenuous.</p>
 </ul>
 <p>I also added <a href="/blog2/rss.xml">rss</a> and <a href="/blog2/atom.xml">atom</a>
 feeds using the <code>@11ty/eleventy-plugin-rss</code> library.</p>
-<h3>mobile / screen sizes</h3>
+<h3 id="mobile-screen-sizes" tabindex="-1">mobile / screen sizes <a class="header-anchor" href="#mobile-screen-sizes">#</a></h3>
 <p>There's no nav, columns, or anything funky about the layout here, so
 it just fine on a mobile screen out of the box:</p>
-<p><picture><source type="image/webp" srcset="/blog2/blog/2023-02-27.02.this-blog/BUy4_ydavp-300.webp 300w, /blog2/blog/2023-02-27.02.this-blog/BUy4_ydavp-600.webp 600w" sizes="30em"><img alt="mobile view" loading="lazy" decoding="async" src="/blog2/blog/2023-02-27.02.this-blog/BUy4_ydavp-300.jpeg" width="600" height="416" srcset="/blog2/blog/2023-02-27.02.this-blog/BUy4_ydavp-300.jpeg 300w, /blog2/blog/2023-02-27.02.this-blog/BUy4_ydavp-600.jpeg 600w" sizes="30em"></picture></p>
-<h3>colocated images</h3>
+<img src="/blog2/img/BUy4_ydavp-600.png" alt="mobile" view="">
+<h3 id="colocated-images" tabindex="-1">colocated images <a class="header-anchor" href="#colocated-images">#</a></h3>
 <p>Colocating images with posts in Eleventy wasn't intuitive to figure
 out. I referenced these items to accomplish it:</p>
 <ul>
 <li><a href="https://gfscott.com/blog/eleventy-img-without-central-image-directory/">Using the Eleventy Image plugin without a central image folder</a></li>
 <li><a href="https://www.11ty.dev/docs/plugins/image/#asynchronous-shortcode">Eleventy image shortcode</a></li>
 </ul>
-<h3>build/deploy/hosting</h3>
+<h3 id="build-deploy-hosting" tabindex="-1">build/deploy/hosting <a class="header-anchor" href="#build-deploy-hosting">#</a></h3>
 <p>The source code for this blog is located on github.com, so I'm just using github actions
 and a <code>gh-pages</code> branch to host the site.</p>
 <p>Building a static site with a <code>yarn</code> command is pretty trivial in a github action. After that,
 you can publish it to a <code>gh-pages</code> branch with the <code>peaceiris/actions-gh-pages@v3</code> action:</p>
-<pre><code>const x = () =&gt; {
-  return 'blah';
-}
-</code></pre>
 <pre class="language-yaml" tabindex="0"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build
 <span class="token key atrule">on</span><span class="token punctuation">:</span>
-  <span class="token key atrule">push</span><span class="token punctuation">:</span>
-    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> main
+    <span class="token key atrule">push</span><span class="token punctuation">:</span>
+        <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+            <span class="token punctuation">-</span> main
 <span class="token key atrule">jobs</span><span class="token punctuation">:</span>
-  <span class="token key atrule">build-to-gh-pages-branch</span><span class="token punctuation">:</span>
+    <span class="token key atrule">build-to-gh-pages-branch</span><span class="token punctuation">:</span>
     <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
     <span class="token key atrule">steps</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node
+        <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2
+
+        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node
         <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1
         <span class="token key atrule">with</span><span class="token punctuation">:</span>
-          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">"20.x"</span>
-      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn
-      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn run build<span class="token punctuation">:</span>prod
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy
-        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
-        <span class="token key atrule">with</span><span class="token punctuation">:</span>
-          <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $
-          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./_site</code></pre>
+            <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">"20.x"</span>
+
+        <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn
+
+        <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn run build<span class="token punctuation">:</span>prod
+
+        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy
+            <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
+            <span class="token key atrule">with</span><span class="token punctuation">:</span>
+                <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $
+                <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./_site</code></pre>
 <p>Unfortunately I haven't figured out how to get fenced code blocks
 to render correctly when they have blank lines.</p>
-  </article><article>
-  <p>---</p>
-  <h2><a href="/blog2/blog/2023-02-27.02.ipad/">2023-02-27</a></h2>
-  <p><time>2023-02-27</time></p>
-  <p>One thing i wanted to try was creating posts on the iPad.</p>
-<p>I'm using the Termius app to ssh into my server, where i can
-author posts and fully interact with the repo.</p>
-<p>I also tried the iSh app on iOS, which is basically Alpine
-linux on iPad, but was too bare bones for my liking.</p>
-  </article><article>
-  <p>---</p>
-  <h2><a href="/blog2/blog/2023-02-27-first/">first</a></h2>
-  <p><time>2023-02-27</time></p>
-  <p>I'm Mike. I've been a software engineer since 1998. My
+
+		</div>
+	</article>
+	<article>
+		<p>
+			---</p>
+		<p>
+			<a href="/blog2/blog/2023-02-27.01.first/">
+				<h2>first</h2>
+			</a>
+		</p>
+		<div>
+			<p>I'm Mike. I've been a software engineer since 1998. My
 biggest interest in life is making experimental music with
 electronics and computers. I also love backpacking/camping/hiking
 and I try to be a better chef every day.</p>
@@ -126,11 +359,14 @@ among others.</p>
 <p>Not sure where this blog is going to take me. Expect anything:
 a breadth of topics; posts ranging from one sentence to
 many paragraphs. No idea what to expect.</p>
-  </article>
-            </main>
-            <footer>
-                &copy; Copyright 2024 Mike Hodnick. Unauthorized duplication may result in dry mouth.
-                </footer>
-        </div>
-    </body>
+
+		</div>
+	</article>
+			</main>
+
+			<footer></footer>
+
+		</div>
+		<!-- Current page: /blog2/ -->
+	</body>
 </html>
