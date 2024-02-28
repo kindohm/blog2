@@ -8,12 +8,12 @@ layout: layout.njk
 <h3 class="no-before"><a href="/why">why?</a></h3>
 </div>
 
-{%- for post in collections.blog -%}
+{%- for post in collections.posts -%}
 
   <article>
 
   <p>---</p>
-  <h2><a href="{{ post.url }}">{{post.data | realTitle }}</a></h2>
+  <h2><a href="{{ post.url }}">{{post.data.title }}</a></h2>
   <p><time>{{ post.date | htmlDateString }}</time></p>
   {{ post.content  | safe}}
   </article>
