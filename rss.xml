@@ -46,6 +46,19 @@ many paragraphs. No idea what to expect.&lt;/p&gt;
                 <guid>https://kindohm.com/blog/2023-02-27-first/</guid>
             </item>
             <item>
+                <title>2023-02-27</title>
+                <link>https://kindohm.com/blog/2023-02-27.02.ipad/</link>
+                <description>&lt;p&gt;One thing i wanted to try was creating posts on the iPad.&lt;/p&gt;
+&lt;p&gt;I&#39;m using the Termius app to ssh into my server, where i can
+author posts and fully interact with the repo.&lt;/p&gt;
+&lt;p&gt;I also tried the iSh app on iOS, which is basically Alpine
+linux on iPad, but was too bare bones for my liking.&lt;/p&gt;
+</description>
+                <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+                <dc:creator>Mike Hodnick</dc:creator>
+                <guid>https://kindohm.com/blog/2023-02-27.02.ipad/</guid>
+            </item>
+            <item>
                 <title>this blog</title>
                 <link>https://kindohm.com/blog/2023-02-27.02.this-blog/</link>
                 <description>&lt;p&gt;A bit of info about how I built this blog:&lt;/p&gt;
