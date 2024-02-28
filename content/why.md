@@ -1,6 +1,6 @@
 ---
 title: why
-layout: layout.njk
+layout: layouts/base.njk
 ---
 
 This blog is basically a place to dump

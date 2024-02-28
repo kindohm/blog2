@@ -34,6 +34,8 @@ feeds using the `@11ty/eleventy-plugin-rss` library.
 There's no nav, columns, or anything funky about the layout here, so
 it just fine on a mobile screen out of the box:
 
+{% image "./mobile.png", "mobile view" %}
+
 ### colocated images
 
 Colocating images with posts in Eleventy wasn't intuitive to figure
