@@ -4,7 +4,7 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/blog2/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/blog2/"/>
-	<updated>2024-02-28T00:00:00Z</updated>
+	<updated>2024-03-01T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
@@ -12,11 +12,93 @@
 	</author>
 	
 	<entry>
+		<title>music - hardware versus computer</title>
+		<link href="https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/"/>
+		<updated>2024-03-01T00:00:00Z</updated>
+		<id>https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/</id>
+		<content type="html">&lt;p&gt;I&#39;ve been inspired recently to try and exclusively use hardware&lt;br&gt;
+(synthesizers) for making music. This is quite a change for me&lt;br&gt;
+since my past processes have involved the use of a computer with&lt;br&gt;
+very unconventional tooling (no DAW, just code).&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/blog2/img/c00f9I7hwG-600.png&quot; alt=&quot;Elektron&quot; Analog=&quot;&quot; RYTM=&quot;&quot; and=&quot;&quot; Syntakt=&quot;&quot;&gt;
+&lt;p&gt;This is what I came up with in my first experiment:&lt;/p&gt;
+&lt;p&gt;&lt;audio controls=&quot;&quot; src=&quot;https://kindohm.nyc3.digitaloceanspaces.com/blog-assets/2024-03-01.01.hardware-vs-computer/2024-02-29.mp3&quot;&gt;&lt;br&gt;
+&lt;a href=&quot;https://kindohm.nyc3.digitaloceanspaces.com/blog-assets/2024-03-01.01.hardware-vs-computer/2024-02-29.mp3&quot;&gt;download&lt;/a&gt;&lt;br&gt;
+&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;My ultimate goal is to craft a hardware setup that is like a sandbox&lt;br&gt;
+to play in. I want to maximize the improvisational capabilities of&lt;br&gt;
+my machines and be able to command them quickly.&lt;/p&gt;
+&lt;p&gt;This is harder than it sounds![1]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the Elektron sequencers are deep&lt;/li&gt;
+&lt;li&gt;Syntakt sound design is challenging&lt;/li&gt;
+&lt;li&gt;I have to create many patterns for the variation I desire&lt;/li&gt;
+&lt;li&gt;I use two machines which have similar yet different interfaces&lt;/li&gt;
+&lt;li&gt;Figuring out how to play&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;elektron-sequencers-are-deep&quot; tabindex=&quot;-1&quot;&gt;Elektron sequencers are deep &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I will always say that TidalCycles is king for sequencing, but&lt;br&gt;
+the Elektron sequencers are a close second. They are so deep!&lt;br&gt;
+The parameter locking and per-step trigger conditions (e.g. fill,&lt;br&gt;
+no fill, probability, step modulus, etc) let me achieve much&lt;br&gt;
+of the chaos and variation I crave.&lt;/p&gt;
+&lt;p&gt;One of the features on the RYTM is &amp;quot;accent&amp;quot;, which lets you&lt;br&gt;
+add yet another type of variation on a step. I&#39;ve never used this&lt;br&gt;
+feature before.&lt;/p&gt;
+&lt;h3 id=&quot;syntakt-sound-design-is-challenging&quot; tabindex=&quot;-1&quot;&gt;Syntakt sound design is challenging &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;It took me years to really get comfortable with the nuance of&lt;br&gt;
+sound design on the RYTM. It&#39;s a deeper synth than it appears&lt;br&gt;
+to be. If you combine its sample layering then you can really&lt;br&gt;
+achieve a lot of unique sounds.&lt;/p&gt;
+&lt;p&gt;On the Syntakt I feel like I am still a beginner. I guess&lt;br&gt;
+I just haven&#39;t found my &amp;quot;voice&amp;quot; on that synth yet. I fear that&lt;br&gt;
+it&#39;s going to take me years of hands-on practice with it on&lt;br&gt;
+a nearly daily basis (just like on the RYTM) to finally&lt;br&gt;
+get comfortable with it.&lt;/p&gt;
+&lt;h3 id=&quot;many-many-many-patterns&quot; tabindex=&quot;-1&quot;&gt;many many many patterns &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I like a lot of variation in my music. I rarely want the same&lt;br&gt;
+sequence to play more than one or twice in a row. The Elektron&lt;br&gt;
+sequencer can help fake out your ears by adding variation per&lt;br&gt;
+step, but the real solution is creating entirely different&lt;br&gt;
+patterns and changing between them on the fly.&lt;/p&gt;
+&lt;p&gt;This is a good solution, but takes a lot more time to assemble.&lt;br&gt;
+The only real feasible way to do it on the Elektron synths is&lt;br&gt;
+to &lt;em&gt;copy&lt;/em&gt; patterns. Good luck trying to create each pattern&lt;br&gt;
+from scratch!&lt;/p&gt;
+&lt;h3 id=&quot;two-machines-similar-but-different&quot; tabindex=&quot;-1&quot;&gt;two machines, similar but different &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The RYTM and Syntakt are very similar in their interfaces. They&lt;br&gt;
+both have a similar LED display with a consistent presentation&lt;br&gt;
+of eight synth parameters per voice. Their sequencers are programmed&lt;br&gt;
+in the same way.&lt;/p&gt;
+&lt;p&gt;But that&#39;s kind of where the similarities end.&lt;/p&gt;
+&lt;p&gt;The two machines differ in how you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mute/umute parts&lt;/li&gt;
+&lt;li&gt;change patterns&lt;/li&gt;
+&lt;li&gt;use performance macros to make wholesale changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&#39;s a bit of cognative overload when operating both&lt;br&gt;
+machines at the same time.&lt;/p&gt;
+&lt;h3 id=&quot;figuring-out-how-to-play&quot; tabindex=&quot;-1&quot;&gt;Figuring out how to play &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I&#39;m too accustomed to improvising in TidalCycles code.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Playing&amp;quot; on the Elektron machines is not natural to me (yet).&lt;br&gt;
+I&#39;m still developing some muscle memory for certain actions,&lt;br&gt;
+and I need to read the manuals some more.&lt;/p&gt;
+&lt;p&gt;The two big objectives I have here are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;craft a performance arc&lt;/li&gt;
+&lt;li&gt;know how to steer the machines into chaotic territory and then rein them back in&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[1] if I were making techno it&#39;d be a lot easier!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title></title>
 		<link href="https://kindohm.com/blog2/blog/2024/2024-02-28.01.inspired-by/"/>
 		<updated>2024-02-28T00:00:00Z</updated>
 		<id>https://kindohm.com/blog2/blog/2024/2024-02-28.01.inspired-by/</id>
-		<content type="html">&lt;p&gt;This blog was inspired by my pal
+		<content type="html">&lt;p&gt;This blog was inspired by my pal&lt;br&gt;
 &lt;a href=&quot;https://zapplebee.online/&quot;&gt;zapplebee&lt;/a&gt;.&lt;/p&gt;
 </content>
 	</entry>
@@ -27,9 +109,9 @@
 		<updated>2024-02-27T00:00:00Z</updated>
 		<id>https://kindohm.com/blog2/blog/2024/2024-02-27.03.ipad/</id>
 		<content type="html">&lt;p&gt;One thing i wanted to try was creating posts on the iPad.&lt;/p&gt;
-&lt;p&gt;I&#39;m using the Termius app to ssh into my server, where i can
+&lt;p&gt;I&#39;m using the Termius app to ssh into my server, where i can&lt;br&gt;
 author posts and fully interact with the repo.&lt;/p&gt;
-&lt;p&gt;I also tried the iSh app on iOS, which is basically Alpine
+&lt;p&gt;I also tried the iSh app on iOS, which is basically Alpine&lt;br&gt;
 linux on iPad, but was too bare bones for my liking.&lt;/p&gt;
 </content>
 	</entry>
@@ -41,11 +123,11 @@ linux on iPad, but was too bare bones for my liking.&lt;/p&gt;
 		<id>https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/</id>
 		<content type="html">&lt;p&gt;A bit of info about how I built this blog:&lt;/p&gt;
 &lt;h3 id=&quot;static-site-generator&quot; tabindex=&quot;-1&quot;&gt;static site generator &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;I&#39;m using &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt;
-for static site generation. I&#39;ve been a fan of 11ty for a while
+&lt;p&gt;I&#39;m using &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt;&lt;br&gt;
+for static site generation. I&#39;ve been a fan of 11ty for a while&lt;br&gt;
 and was already familiar with it, so I just kept using it.&lt;/p&gt;
-&lt;p&gt;There isn&#39;t much to the site! I want to say that the
-&lt;a href=&quot;https://github.com/kindohm/blog2/tree/main&quot;&gt;source code&lt;/a&gt;
+&lt;p&gt;There isn&#39;t much to the site! I want to say that the&lt;br&gt;
+&lt;a href=&quot;https://github.com/kindohm/blog2/tree/main&quot;&gt;source code&lt;/a&gt;&lt;br&gt;
 speaks for itself 🤷, but that&#39;s kinda disingenuous.&lt;/p&gt;
 &lt;p&gt;I wanted this blog to be ultra simple:&lt;/p&gt;
 &lt;ul&gt;
@@ -59,23 +141,23 @@ speaks for itself 🤷, but that&#39;s kinda disingenuous.&lt;/p&gt;
 &lt;li&gt;posts/entries in a &lt;code&gt;content/blog&lt;/code&gt; folder&lt;/li&gt;
 &lt;li&gt;trivial HTML shell layout in &lt;code&gt;_includes/layout.njk&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I also added &lt;a href=&quot;https://kindohm.com/blog2/rss.xml&quot;&gt;rss&lt;/a&gt; and &lt;a href=&quot;https://kindohm.com/blog2/atom.xml&quot;&gt;atom&lt;/a&gt;
+&lt;p&gt;I also added &lt;a href=&quot;https://kindohm.com/blog2/rss.xml&quot;&gt;rss&lt;/a&gt; and &lt;a href=&quot;https://kindohm.com/blog2/atom.xml&quot;&gt;atom&lt;/a&gt;&lt;br&gt;
 feeds using the &lt;code&gt;@11ty/eleventy-plugin-rss&lt;/code&gt; library.&lt;/p&gt;
 &lt;h3 id=&quot;mobile-screen-sizes&quot; tabindex=&quot;-1&quot;&gt;mobile / screen sizes &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;There&#39;s no nav, columns, or anything funky about the layout here, so
+&lt;p&gt;There&#39;s no nav, columns, or anything funky about the layout here, so&lt;br&gt;
 it just fine on a mobile screen out of the box:&lt;/p&gt;
 &lt;img src=&quot;https://kindohm.com/blog2/img/BUy4_ydavp-600.png&quot; alt=&quot;mobile&quot; view=&quot;&quot;&gt;
 &lt;h3 id=&quot;colocated-images&quot; tabindex=&quot;-1&quot;&gt;colocated images &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Colocating images with posts in Eleventy wasn&#39;t intuitive to figure
+&lt;p&gt;Colocating images with posts in Eleventy wasn&#39;t intuitive to figure&lt;br&gt;
 out. I referenced these items to accomplish it:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://gfscott.com/blog/eleventy-img-without-central-image-directory/&quot;&gt;Using the Eleventy Image plugin without a central image folder&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/docs/plugins/image/#asynchronous-shortcode&quot;&gt;Eleventy image shortcode&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;build-deploy-hosting&quot; tabindex=&quot;-1&quot;&gt;build/deploy/hosting &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;The source code for this blog is located on github.com, so I&#39;m just using github actions
+&lt;p&gt;The source code for this blog is located on &lt;a href=&quot;http://github.com&quot;&gt;github.com&lt;/a&gt;, so I&#39;m just using github actions&lt;br&gt;
 and a &lt;code&gt;gh-pages&lt;/code&gt; branch to host the site.&lt;/p&gt;
-&lt;p&gt;Building a static site with a &lt;code&gt;yarn&lt;/code&gt; command is pretty trivial in a github action. After that,
+&lt;p&gt;Building a static site with a &lt;code&gt;yarn&lt;/code&gt; command is pretty trivial in a github action. After that,&lt;br&gt;
 you can publish it to a &lt;code&gt;gh-pages&lt;/code&gt; branch with the &lt;code&gt;peaceiris/actions-gh-pages@v3&lt;/code&gt; action:&lt;/p&gt;
 &lt;pre class=&quot;language-yaml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Eleventy Build
 &lt;span class=&quot;token key atrule&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
@@ -102,7 +184,7 @@ you can publish it to a &lt;code&gt;gh-pages&lt;/code&gt; branch with the &lt;co
             &lt;span class=&quot;token key atrule&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
                 &lt;span class=&quot;token key atrule&quot;&gt;deploy_key&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $
                 &lt;span class=&quot;token key atrule&quot;&gt;publish_dir&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ./_site&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;s&gt;Unfortunately I haven&#39;t figured out how to get fenced code blocks
+&lt;p&gt;&lt;s&gt;Unfortunately I haven&#39;t figured out how to get fenced code blocks&lt;br&gt;
 to render correctly when they have blank lines.&lt;/s&gt;&lt;/p&gt;
 </content>
 	</entry>
@@ -112,36 +194,36 @@ to render correctly when they have blank lines.&lt;/s&gt;&lt;/p&gt;
 		<link href="https://kindohm.com/blog2/blog/2024/2024-02-27.01.first/"/>
 		<updated>2024-02-27T00:00:00Z</updated>
 		<id>https://kindohm.com/blog2/blog/2024/2024-02-27.01.first/</id>
-		<content type="html">&lt;p&gt;I&#39;m Mike. I&#39;ve been a software engineer since 1998. My
-biggest interest in life is making experimental music with
-electronics and computers. I also love backpacking/camping/hiking
+		<content type="html">&lt;p&gt;I&#39;m Mike. I&#39;ve been a software engineer since 1998. My&lt;br&gt;
+biggest interest in life is making experimental music with&lt;br&gt;
+electronics and computers. I also love backpacking/camping/hiking&lt;br&gt;
 and I try to be a better chef every day.&lt;/p&gt;
-&lt;p&gt;I don&#39;t know if I have much to say here on this blog, but yet
-I also feel like I have a story to tell. Or maybe this&#39;ll just
+&lt;p&gt;I don&#39;t know if I have much to say here on this blog, but yet&lt;br&gt;
+I also feel like I have a story to tell. Or maybe this&#39;ll just&lt;br&gt;
 be a dump for bits that I don&#39;t want to forget.&lt;/p&gt;
-&lt;p&gt;Back in the 2000&#39;s I ran my own blog that ran on .TEXT
-and then &lt;a href=&quot;https://haacked.com/archive/2005/05/04/announcing-subtext.aspx/&quot;&gt;Subtext&lt;/a&gt;.
+&lt;p&gt;Back in the 2000&#39;s I ran my own blog that ran on .TEXT&lt;br&gt;
+and then &lt;a href=&quot;https://haacked.com/archive/2005/05/04/announcing-subtext.aspx/&quot;&gt;Subtext&lt;/a&gt;.&lt;br&gt;
 I amassed over 1000 posts on that blog but I eventually abandoned it.&lt;/p&gt;
-&lt;p&gt;I currently work as a software engineer, doing a lot of React
-and nodejs work. Prior to my javascript-centric life I did a
-lot of .NET dev with c#. The one constant has been the web though,
-and I don&#39;t really care much about what language I use as long
+&lt;p&gt;I currently work as a software engineer, doing a lot of React&lt;br&gt;
+and nodejs work. Prior to my javascript-centric life I did a&lt;br&gt;
+lot of .NET dev with c#. The one constant has been the web though,&lt;br&gt;
+and I don&#39;t really care much about what language I use as long&lt;br&gt;
 as I&#39;m productive.&lt;/p&gt;
-&lt;p&gt;Creative coding is more fun than work coding, which is where
-my musical side comes in. I compose and perform music using
-the &lt;a href=&quot;https://tidalcycles.org&quot;&gt;TidalCycles&lt;/a&gt;
-livecoding environment. TidalCycles, or just &amp;quot;Tidal&amp;quot;, allows
-you to sequence samples, or sequence synthesizers over MIDI.
-Tidal is the end all sequencer that can do nearly anything
+&lt;p&gt;Creative coding is more fun than work coding, which is where&lt;br&gt;
+my musical side comes in. I compose and perform music using&lt;br&gt;
+the &lt;a href=&quot;https://tidalcycles.org&quot;&gt;TidalCycles&lt;/a&gt;&lt;br&gt;
+livecoding environment. TidalCycles, or just &amp;quot;Tidal&amp;quot;, allows&lt;br&gt;
+you to sequence samples, or sequence synthesizers over MIDI.&lt;br&gt;
+Tidal is the end all sequencer that can do nearly anything&lt;br&gt;
 you can imagine.&lt;/p&gt;
-&lt;p&gt;In my musical endeavors I&#39;ve been lucky to have traveled and
-performed in the USA and internationally in Europe and Canada.
-I&#39;ve performed at events like the Algorithmic Art Assembly
-(San Francisco), Sound of Stockholm, the International
-Conference on Computer Music (Limerick), Algomech (Sheffield),
+&lt;p&gt;In my musical endeavors I&#39;ve been lucky to have traveled and&lt;br&gt;
+performed in the USA and internationally in Europe and Canada.&lt;br&gt;
+I&#39;ve performed at events like the Algorithmic Art Assembly&lt;br&gt;
+(San Francisco), Sound of Stockholm, the International&lt;br&gt;
+Conference on Computer Music (Limerick), Algomech (Sheffield),&lt;br&gt;
 among others.&lt;/p&gt;
-&lt;p&gt;Not sure where this blog is going to take me. Expect anything:
-a breadth of topics; posts ranging from one sentence to
+&lt;p&gt;Not sure where this blog is going to take me. Expect anything:&lt;br&gt;
+a breadth of topics; posts ranging from one sentence to&lt;br&gt;
 many paragraphs. No idea what to expect.&lt;/p&gt;
 </content>
 	</entry>

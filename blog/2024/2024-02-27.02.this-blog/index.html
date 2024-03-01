@@ -108,11 +108,11 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 	</p>
 	<p>A bit of info about how I built this blog:</p>
 <h3 id="static-site-generator" tabindex="-1">static site generator <a class="header-anchor" href="#static-site-generator">#</a></h3>
-<p>I'm using <a href="https://www.11ty.dev/">Eleventy</a>
-for static site generation. I've been a fan of 11ty for a while
+<p>I'm using <a href="https://www.11ty.dev/">Eleventy</a><br>
+for static site generation. I've been a fan of 11ty for a while<br>
 and was already familiar with it, so I just kept using it.</p>
-<p>There isn't much to the site! I want to say that the
-<a href="https://github.com/kindohm/blog2/tree/main">source code</a>
+<p>There isn't much to the site! I want to say that the<br>
+<a href="https://github.com/kindohm/blog2/tree/main">source code</a><br>
 speaks for itself 🤷, but that's kinda disingenuous.</p>
 <p>I wanted this blog to be ultra simple:</p>
 <ul>
@@ -126,23 +126,23 @@ speaks for itself 🤷, but that's kinda disingenuous.</p>
 <li>posts/entries in a <code>content/blog</code> folder</li>
 <li>trivial HTML shell layout in <code>_includes/layout.njk</code></li>
 </ul>
-<p>I also added <a href="/blog2/rss.xml">rss</a> and <a href="/blog2/atom.xml">atom</a>
+<p>I also added <a href="/blog2/rss.xml">rss</a> and <a href="/blog2/atom.xml">atom</a><br>
 feeds using the <code>@11ty/eleventy-plugin-rss</code> library.</p>
 <h3 id="mobile-screen-sizes" tabindex="-1">mobile / screen sizes <a class="header-anchor" href="#mobile-screen-sizes">#</a></h3>
-<p>There's no nav, columns, or anything funky about the layout here, so
+<p>There's no nav, columns, or anything funky about the layout here, so<br>
 it just fine on a mobile screen out of the box:</p>
 <img src="/blog2/img/BUy4_ydavp-600.png" alt="mobile" view="">
 <h3 id="colocated-images" tabindex="-1">colocated images <a class="header-anchor" href="#colocated-images">#</a></h3>
-<p>Colocating images with posts in Eleventy wasn't intuitive to figure
+<p>Colocating images with posts in Eleventy wasn't intuitive to figure<br>
 out. I referenced these items to accomplish it:</p>
 <ul>
 <li><a href="https://gfscott.com/blog/eleventy-img-without-central-image-directory/">Using the Eleventy Image plugin without a central image folder</a></li>
 <li><a href="https://www.11ty.dev/docs/plugins/image/#asynchronous-shortcode">Eleventy image shortcode</a></li>
 </ul>
 <h3 id="build-deploy-hosting" tabindex="-1">build/deploy/hosting <a class="header-anchor" href="#build-deploy-hosting">#</a></h3>
-<p>The source code for this blog is located on github.com, so I'm just using github actions
+<p>The source code for this blog is located on <a href="http://github.com">github.com</a>, so I'm just using github actions<br>
 and a <code>gh-pages</code> branch to host the site.</p>
-<p>Building a static site with a <code>yarn</code> command is pretty trivial in a github action. After that,
+<p>Building a static site with a <code>yarn</code> command is pretty trivial in a github action. After that,<br>
 you can publish it to a <code>gh-pages</code> branch with the <code>peaceiris/actions-gh-pages@v3</code> action:</p>
 <pre class="language-yaml" tabindex="0"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Eleventy Build
 <span class="token key atrule">on</span><span class="token punctuation">:</span>
@@ -169,7 +169,7 @@ you can publish it to a <code>gh-pages</code> branch with the <code>peaceiris/ac
             <span class="token key atrule">with</span><span class="token punctuation">:</span>
                 <span class="token key atrule">deploy_key</span><span class="token punctuation">:</span> $
                 <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./_site</code></pre>
-<p><s>Unfortunately I haven't figured out how to get fenced code blocks
+<p><s>Unfortunately I haven't figured out how to get fenced code blocks<br>
 to render correctly when they have blank lines.</s></p>
 
 
