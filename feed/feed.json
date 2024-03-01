@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://kindohm.com/blog2/blog/2024/2024.03.01.02.domain/",
+			"url": "https://kindohm.com/blog2/blog/2024/2024.03.01.02.domain/",
+			"title": "",
+			"content_html": "<p>This site is now hosted at <a href=\"https://mikehodnick.xyz\">https://mikehodnick.xyz</a></p>\n",
+			"date_published": "2024-03-01T17:37:23Z"
+		}
+		,
+		{
 			"id": "https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/",
 			"url": "https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/",
 			"title": "music - hardware versus computer",
