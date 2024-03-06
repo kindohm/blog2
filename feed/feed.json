@@ -11,19 +11,19 @@
 	},
 	"items": [
 		{
-			"id": "https://kindohm.com/blog2/blog/2024/2024.03.01.02.domain/",
-			"url": "https://kindohm.com/blog2/blog/2024/2024.03.01.02.domain/",
-			"title": "hosted at",
-			"content_html": "<p>This site is now hosted at <a href=\"https://mikehodnick.xyz\">https://mikehodnick.xyz</a></p>\n",
-			"date_published": "2024-03-06T19:31:22Z"
-		}
-		,
-		{
 			"id": "https://kindohm.com/blog2/blog/2024/2024-03-06.01.computer-feels-good/",
 			"url": "https://kindohm.com/blog2/blog/2024/2024-03-06.01.computer-feels-good/",
 			"title": "the computer feels good",
 			"content_html": "<p>welp I'm back to making music on the computer for\nthe time being 😅</p>\n<p>I think it's healthy for creative types to step outside\nof their comfort zone and try new things that don't\nnecessarily feel natural. At least for me, I end up\nlearning things along the way that I can apply to my\nmore comfortable processes.</p>\n<p>The same goes for computer programming. For example,\nwhen you learn a new programming language, sometimes\nthat new language's features or programming\nparadigm influence how you write code in your\nregular programming language.</p>\n<p>anyway, I'm back at the computer, making music with\nTidalCycles, the Harmor VST, and a drum machine.\nit's my bread and butter, and it feels so good to do.\nI guess the extreme sequencing and sounds I can\ncreate with this toolchain just suits my tastes.</p>\n",
 			"date_published": "2024-03-06T00:00:00Z"
+		}
+		,
+		{
+			"id": "https://kindohm.com/blog2/blog/2024/2024-03-01.02.domain/",
+			"url": "https://kindohm.com/blog2/blog/2024/2024-03-01.02.domain/",
+			"title": "hosted at",
+			"content_html": "<p>This site is now hosted at <a href=\"https://mikehodnick.xyz\">https://mikehodnick.xyz</a></p>\n",
+			"date_published": "2024-03-01T00:00:00Z"
 		}
 		,
 		{

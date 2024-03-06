@@ -4,21 +4,12 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/blog2/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/blog2/"/>
-	<updated>2024-03-06T19:31:22Z</updated>
+	<updated>2024-03-06T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
-	
-	<entry>
-		<title>hosted at</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024.03.01.02.domain/"/>
-		<updated>2024-03-06T19:31:22Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024.03.01.02.domain/</id>
-		<content type="html">&lt;p&gt;This site is now hosted at &lt;a href=&quot;https://mikehodnick.xyz&quot;&gt;https://mikehodnick.xyz&lt;/a&gt;&lt;/p&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>the computer feels good</title>
@@ -42,6 +33,15 @@ TidalCycles, the Harmor VST, and a drum machine.
 it&#39;s my bread and butter, and it feels so good to do.
 I guess the extreme sequencing and sounds I can
 create with this toolchain just suits my tastes.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>hosted at</title>
+		<link href="https://kindohm.com/blog2/blog/2024/2024-03-01.02.domain/"/>
+		<updated>2024-03-01T00:00:00Z</updated>
+		<id>https://kindohm.com/blog2/blog/2024/2024-03-01.02.domain/</id>
+		<content type="html">&lt;p&gt;This site is now hosted at &lt;a href=&quot;https://mikehodnick.xyz&quot;&gt;https://mikehodnick.xyz&lt;/a&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
