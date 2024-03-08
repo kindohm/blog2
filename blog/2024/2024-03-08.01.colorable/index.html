@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>first</title>
+		<title>Colorable</title>
 		<meta name="description" content="Dropping stuff here so I don&#39;t forget.">
 		<link rel="alternate" href="/blog2/feed/feed.xml" type="application/atom+xml" title="Mike Hodnick&#39;s Blog">
 		<link rel="alternate" href="/blog2/feed/feed.json" type="application/json" title="Mike Hodnick&#39;s Blog">
@@ -115,42 +115,28 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 
 <article>
 	<h2>
-		<a href=".">first</a>
+		<a href=".">Colorable</a>
 	</h2>
 	<p>
-		<time>2024-02-27</time>
+		<time>2024-03-08</time>
 	</p>
-	<p>I'm Mike. I've been a software engineer since 1998. My
-biggest interest in life is making experimental music with
-electronics and computers. I also love backpacking/camping/hiking
-and I try to be a better chef every day.</p>
-<p>I don't know if I have much to say here on this blog, but yet
-I also feel like I have a story to tell. Or maybe this'll just
-be a dump for bits that I don't want to forget.</p>
-<p>Back in the 2000's I ran my own blog that ran on .TEXT
-and then <a href="https://haacked.com/archive/2005/05/04/announcing-subtext.aspx/">Subtext</a>.
-I amassed over 1000 posts on that blog but I eventually abandoned it.</p>
-<p>I currently work as a software engineer, doing a lot of React
-and nodejs work. Prior to my javascript-centric life I did a
-lot of .NET dev with c#. The one constant has been the web though,
-and I don't really care much about what language I use as long
-as I'm productive.</p>
-<p>Creative coding is more fun than work coding, which is where
-my musical side comes in. I compose and perform music using
-the <a href="https://tidalcycles.org">TidalCycles</a>
-livecoding environment. TidalCycles, or just &quot;Tidal&quot;, allows
-you to sequence samples, or sequence synthesizers over MIDI.
-Tidal is the end all sequencer that can do nearly anything
-you can imagine.</p>
-<p>In my musical endeavors I've been lucky to have traveled and
-performed in the USA and internationally in Europe and Canada.
-I've performed at events like the Algorithmic Art Assembly
-(San Francisco), Sound of Stockholm, the International
-Conference on Computer Music (Limerick), Algomech (Sheffield),
-among others.</p>
-<p>Not sure where this blog is going to take me. Expect anything:
-a breadth of topics; posts ranging from one sentence to
-many paragraphs. No idea what to expect.</p>
+	<p>A tidbit about this blog:</p>
+<p>I am using <a href="https://github.com/jxnblk/colorable">jxnblk's <code>colorable</code></a>
+library to produce a random color palette for this site every time it is built[1].</p>
+<p><code>colorable</code> helps you learn when two colors have a sufficient contrast for
+background and foreground colors.</p>
+<p>I created a simple algorithm to generate an array of random colors which
+uses <code>colorable</code> to determine if any of the random colors have sufficient
+contrast. If none do, then I repeat the process until a good contrast
+combo is obtained.</p>
+<p>Then I put the foreground and background colors in the Eleventy <code>metadata.js</code>
+data file, which is then used in the base layout's <code>&lt;style&gt;</code>.</p>
+<img src="/blog2/img/I5BJcn57dy-250.png" alt="colorable 01">
+<img src="/blog2/img/NWuWsTXl5c-250.png" alt="colorable 02">
+<img src="/blog2/img/oprOCxzoW2-250.png" alt="colorable 03">
+<img src="/blog2/img/Bc3EUD5Wps-250.png" alt="colorable 04">
+<p>Ugly? Yep. Fun? Yep.</p>
+<p>[1] It is built every time I push to the git origin</p>
 
 
 </article>
@@ -161,6 +147,6 @@ many paragraphs. No idea what to expect.</p>
 			</footer>
 
 		</div>
-		<!-- Current page: /blog2/blog/2024/2024-02-27.01.first/ -->
+		<!-- Current page: /blog2/blog/2024/2024-03-08.01.colorable/ -->
 	</body>
 </html>

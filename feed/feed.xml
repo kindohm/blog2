@@ -4,12 +4,53 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/blog2/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/blog2/"/>
-	<updated>2024-03-06T00:00:00Z</updated>
+	<updated>2024-03-08T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title>EACCES</title>
+		<link href="https://kindohm.com/blog2/blog/2024/2024-03-08.02.eacces/"/>
+		<updated>2024-03-08T00:00:00Z</updated>
+		<id>https://kindohm.com/blog2/blog/2024/2024-03-08.02.eacces/</id>
+		<content type="html">&lt;p&gt;Fun fact: I made an album of modular synthesizer music
+in 2023 under the moniker &lt;em&gt;&lt;em&gt;eacces&lt;/em&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;You can find it if you search for it on Bandcamp,
+or it&#39;s available for free direct download at
+&lt;a href=&quot;https://kindohm.com&quot;&gt;kindohm.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a preview:&lt;/p&gt;
+&lt;iframe style=&quot;border: 0; width: 350px; height: 470px;&quot; src=&quot;https://bandcamp.com/EmbeddedPlayer/album=2822053275/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/&quot; seamless=&quot;&quot;&gt;
+  &lt;a href=&quot;https://eacces.bandcamp.com/album/dskflds&quot;&gt;dskflds by eacces&lt;/a&gt;
+&lt;/iframe&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>Colorable</title>
+		<link href="https://kindohm.com/blog2/blog/2024/2024-03-08.01.colorable/"/>
+		<updated>2024-03-08T00:00:00Z</updated>
+		<id>https://kindohm.com/blog2/blog/2024/2024-03-08.01.colorable/</id>
+		<content type="html">&lt;p&gt;A tidbit about this blog:&lt;/p&gt;
+&lt;p&gt;I am using &lt;a href=&quot;https://github.com/jxnblk/colorable&quot;&gt;jxnblk&#39;s &lt;code&gt;colorable&lt;/code&gt;&lt;/a&gt;
+library to produce a random color palette for this site every time it is built[1].&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;colorable&lt;/code&gt; helps you learn when two colors have a sufficient contrast for
+background and foreground colors.&lt;/p&gt;
+&lt;p&gt;I created a simple algorithm to generate an array of random colors which
+uses &lt;code&gt;colorable&lt;/code&gt; to determine if any of the random colors have sufficient
+contrast. If none do, then I repeat the process until a good contrast
+combo is obtained.&lt;/p&gt;
+&lt;p&gt;Then I put the foreground and background colors in the Eleventy &lt;code&gt;metadata.js&lt;/code&gt;
+data file, which is then used in the base layout&#39;s &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/blog2/img/I5BJcn57dy-250.png&quot; alt=&quot;colorable 01&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/blog2/img/NWuWsTXl5c-250.png&quot; alt=&quot;colorable 02&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/blog2/img/oprOCxzoW2-250.png&quot; alt=&quot;colorable 03&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/blog2/img/Bc3EUD5Wps-250.png&quot; alt=&quot;colorable 04&quot;&gt;
+&lt;p&gt;Ugly? Yep. Fun? Yep.&lt;/p&gt;
+&lt;p&gt;[1] It is built every time I push to the git origin&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>the computer feels good</title>
@@ -54,7 +95,7 @@ create with this toolchain just suits my tastes.&lt;/p&gt;
 (synthesizers) for making music. This is quite a change for me
 since my past processes have involved the use of a computer with
 very unconventional tooling (no DAW, just code).&lt;/p&gt;
-&lt;img src=&quot;https://kindohm.com/blog2/img/c00f9I7hwG-600.png&quot; alt=&quot;Elektron&quot; Analog=&quot;&quot; RYTM=&quot;&quot; and=&quot;&quot; Syntakt=&quot;&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/blog2/img/c00f9I7hwG-600.png&quot; alt=&quot;Elektron Analog RYTM and Syntakt&quot;&gt;
 &lt;p&gt;This is what I came up with in my first experiment:&lt;/p&gt;
 &lt;p&gt;&lt;audio controls=&quot;&quot; src=&quot;https://kindohm.nyc3.digitaloceanspaces.com/blog-assets/2024-03-01.01.hardware-vs-computer/2024-02-29.mp3&quot;&gt;
 &lt;a href=&quot;https://kindohm.nyc3.digitaloceanspaces.com/blog-assets/2024-03-01.01.hardware-vs-computer/2024-02-29.mp3&quot;&gt;download&lt;/a&gt;
@@ -180,7 +221,7 @@ feeds using the &lt;code&gt;@11ty/eleventy-plugin-rss&lt;/code&gt; library.&lt;/
 &lt;h3 id=&quot;mobile-screen-sizes&quot; tabindex=&quot;-1&quot;&gt;mobile / screen sizes &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;There&#39;s no nav, columns, or anything funky about the layout here, so
 it just fine on a mobile screen out of the box:&lt;/p&gt;
-&lt;img src=&quot;https://kindohm.com/blog2/img/BUy4_ydavp-600.png&quot; alt=&quot;mobile&quot; view=&quot;&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/blog2/img/BUy4_ydavp-600.png&quot; alt=&quot;mobile view&quot;&gt;
 &lt;h3 id=&quot;colocated-images&quot; tabindex=&quot;-1&quot;&gt;colocated images &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Colocating images with posts in Eleventy wasn&#39;t intuitive to figure
 out. I referenced these items to accomplish it:&lt;/p&gt;
