@@ -8,8 +8,6 @@ const randHex = () => rand255().toString(16).padStart(2, "0");
 
 const randHexColor = () => `#${randHex()}${randHex()}${randHex()}`;
 
-// console.log("colorable", JSON.stringify(result, null, 2));
-
 const getCombo = () => {
   const randColors = new Array(10).fill(null).reduce((acc, col, i) => {
     return { ...acc, [`color${i}`]: randHexColor() };

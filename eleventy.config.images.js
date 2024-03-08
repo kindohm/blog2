@@ -56,7 +56,7 @@ module.exports = function (eleventyConfig) {
       // console.log("html", html);
       // return html;
 
-      return `<img src="${data.url}" alt=${alt} />`;
+      return `<img src="${data.url}" alt="${alt}" />`;
     }
   );
 };
