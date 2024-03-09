@@ -5,8 +5,8 @@ title: EACCES
 Fun fact: I made an album of modular synthesizer music
 in 2023 under the moniker _*eacces*_.
 
-You can find it if you search for it on Bandcamp,
-or it's available for free direct download at
+You can find it on Bandcamp,
+and it's also available for free direct download at
 [kindohm.com](https://kindohm.com).
 
 Here's a preview:
