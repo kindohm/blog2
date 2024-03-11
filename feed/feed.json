@@ -11,6 +11,22 @@
 	},
 	"items": [
 		{
+			"id": "https://kindohm.com/blog2/blog/2024/2024-03-10.02.paging/",
+			"url": "https://kindohm.com/blog2/blog/2024/2024-03-10.02.paging/",
+			"title": "paging",
+			"content_html": "<p>How long until I need some paging on this blog?</p>\n<p>How much vertical content is sane?</p>\n",
+			"date_published": "2024-03-10T00:00:00Z"
+		}
+		,
+		{
+			"id": "https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/",
+			"url": "https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/",
+			"title": "an improv instrument",
+			"content_html": "<p>On my long drive(s) today I was thinking a lot about\ncrafting a new musical improv system for collaborative\nperformances. I want to be able to pack up a small\nsystem and take it with me to jam with other folks.</p>\n<p>My usual approach of creating micro-compositions in\nTidalCycles doesn't seem to fit this need. I want\nsomething that wouldn't require any typing or\nmajor preparation beforehand, and I think I need something\nthat is more tactile.</p>\n<h3 id=\"requirements\" tabindex=\"-1\">Requirements <a class=\"header-anchor\" href=\"https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/\">#</a></h3>\n<p>So what are my requirements?</p>\n<p>I don't know! Maybe stuff like this:</p>\n<ul>\n<li>immediately turn on the system and make sound from manual controls</li>\n<li>react quickly to what I hear, or to what other performers are doing</li>\n<li>be able to produce percussive or textural sounds when needed</li>\n<li>be able to produce harsher or softer sounds when needed</li>\n<li>introduce elements of repetition, whether that's looping, melody, or timbre</li>\n</ul>\n<p>So what are the options?</p>\n<h3 id=\"tidalcycles-samples\" tabindex=\"-1\">TidalCycles + Samples <a class=\"header-anchor\" href=\"https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/\">#</a></h3>\n<p>pros:</p>\n<ul>\n<li>I know TidalCycles extremely well</li>\n<li>range possibilities for open improv is very large</li>\n</ul>\n<p>cons:</p>\n<ul>\n<li>high latency to react to changes on the fly</li>\n<li>limited by samples; can require massive amounts of typing to tweak sounds in a desired way</li>\n</ul>\n<h3 id=\"elektron-analog-rytm\" tabindex=\"-1\">Elektron Analog RYTM <a class=\"header-anchor\" href=\"https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/\">#</a></h3>\n<p>I know the RYTM better than any other piece of gear I own,\nwhich makes it an obvious candidate.</p>\n<p>pros:</p>\n<ul>\n<li>comfortable synth for me</li>\n</ul>\n<p>cons:</p>\n<ul>\n<li>performance macros need to be created ahead of time</li>\n<li>making changes outside of the performance macros require menu-diving</li>\n<li>performance macros are based on touch pressure and can't be easily held</li>\n</ul>\n<h3 id=\"eurorack-modular\" tabindex=\"-1\">Eurorack Modular <a class=\"header-anchor\" href=\"https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/\">#</a></h3>\n<p>pros:</p>\n<ul>\n<li>possibilities are more open-ended</li>\n<li>can patch/craft exactly the system I want</li>\n</ul>\n<p>cons:</p>\n<ul>\n<li>I likely do not own all of the components I would want; expensive</li>\n<li>limited by case capacity</li>\n</ul>\n<h3 id=\"vcv-rack\" tabindex=\"-1\">VCV Rack <a class=\"header-anchor\" href=\"https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/\">#</a></h3>\n<p>pros:</p>\n<ul>\n<li>runs on a laptop</li>\n<li>possibilities are very open-ended</li>\n<li>can craft the system I want</li>\n</ul>\n<p>cons:</p>\n<ul>\n<li>would require inclusion of external controllers to achieve a tactile interface</li>\n<li>limited by CPU</li>\n</ul>\n<h3 id=\"conclusion\" tabindex=\"-1\">Conclusion? <a class=\"header-anchor\" href=\"https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/\">#</a></h3>\n<p>Right now I'm leaning toward VCV Rack as it is the cheapest and\nmost open-ended option. RYTM would be my 2nd choice; also &quot;cheapest&quot;,\nbut would be more limited in possible outcomes. Eurorack is my 3rd\nchoice, as I would likely need to acquire some new modules to\nachieve the tactile interface I'm desiring.</p>\n",
+			"date_published": "2024-03-10T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://kindohm.com/blog2/blog/2024/2024-03-08.02.eacces/",
 			"url": "https://kindohm.com/blog2/blog/2024/2024-03-08.02.eacces/",
 			"title": "EACCES",
