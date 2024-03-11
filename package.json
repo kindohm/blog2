@@ -4,7 +4,7 @@
   "description": "a thing",
   "scripts": {
     "build": "yarn eleventy",
-    "build:prod": "yarn eleventy --pathprefix=/blog2/",
+    "build:prod": "yarn eleventy",
     "dev": "yarn eleventy --serve --quiet",
     "clean": "rm -rf _site"
   },
