@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
 	<title>Mike Hodnick&#39;s Blog</title>
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
-	<link href="https://kindohm.com/blog2/feed/feed.xml" rel="self"/>
-	<link href="https://kindohm.com/blog2/"/>
+	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
+	<link href="https://kindohm.com/"/>
 	<updated>2024-03-10T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
@@ -13,9 +13,9 @@
 	
 	<entry>
 		<title>paging</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-03-10.02.paging/"/>
+		<link href="https://kindohm.com/blog/2024/2024-03-10.02.paging/"/>
 		<updated>2024-03-10T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-03-10.02.paging/</id>
+		<id>https://kindohm.com/blog/2024/2024-03-10.02.paging/</id>
 		<content type="html">&lt;p&gt;How long until I need some paging on this blog?&lt;/p&gt;
 &lt;p&gt;How much vertical content is sane?&lt;/p&gt;
 </content>
@@ -23,9 +23,9 @@
 	
 	<entry>
 		<title>an improv instrument</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/"/>
+		<link href="https://kindohm.com/blog/2024/2024-03-10.01.improv-instrument/"/>
 		<updated>2024-03-10T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/</id>
+		<id>https://kindohm.com/blog/2024/2024-03-10.01.improv-instrument/</id>
 		<content type="html">&lt;p&gt;On my long drive(s) today I was thinking a lot about
 crafting a new musical improv system for collaborative
 performances. I want to be able to pack up a small
@@ -35,7 +35,7 @@ TidalCycles doesn&#39;t seem to fit this need. I want
 something that wouldn&#39;t require any typing or
 major preparation beforehand, and I think I need something
 that is more tactile.&lt;/p&gt;
-&lt;h3 id=&quot;requirements&quot; tabindex=&quot;-1&quot;&gt;Requirements &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;requirements&quot; tabindex=&quot;-1&quot;&gt;Requirements &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;So what are my requirements?&lt;/p&gt;
 &lt;p&gt;I don&#39;t know! Maybe stuff like this:&lt;/p&gt;
 &lt;ul&gt;
@@ -46,7 +46,7 @@ that is more tactile.&lt;/p&gt;
 &lt;li&gt;introduce elements of repetition, whether that&#39;s looping, melody, or timbre&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;So what are the options?&lt;/p&gt;
-&lt;h3 id=&quot;tidalcycles-samples&quot; tabindex=&quot;-1&quot;&gt;TidalCycles + Samples &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;tidalcycles-samples&quot; tabindex=&quot;-1&quot;&gt;TidalCycles + Samples &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;pros:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I know TidalCycles extremely well&lt;/li&gt;
@@ -57,7 +57,7 @@ that is more tactile.&lt;/p&gt;
 &lt;li&gt;high latency to react to changes on the fly&lt;/li&gt;
 &lt;li&gt;limited by samples; can require massive amounts of typing to tweak sounds in a desired way&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;elektron-analog-rytm&quot; tabindex=&quot;-1&quot;&gt;Elektron Analog RYTM &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;elektron-analog-rytm&quot; tabindex=&quot;-1&quot;&gt;Elektron Analog RYTM &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I know the RYTM better than any other piece of gear I own,
 which makes it an obvious candidate.&lt;/p&gt;
 &lt;p&gt;pros:&lt;/p&gt;
@@ -70,7 +70,7 @@ which makes it an obvious candidate.&lt;/p&gt;
 &lt;li&gt;making changes outside of the performance macros require menu-diving&lt;/li&gt;
 &lt;li&gt;performance macros are based on touch pressure and can&#39;t be easily held&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;eurorack-modular&quot; tabindex=&quot;-1&quot;&gt;Eurorack Modular &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;eurorack-modular&quot; tabindex=&quot;-1&quot;&gt;Eurorack Modular &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;pros:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;possibilities are more open-ended&lt;/li&gt;
@@ -81,7 +81,7 @@ which makes it an obvious candidate.&lt;/p&gt;
 &lt;li&gt;I likely do not own all of the components I would want; expensive&lt;/li&gt;
 &lt;li&gt;limited by case capacity&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;vcv-rack&quot; tabindex=&quot;-1&quot;&gt;VCV Rack &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;vcv-rack&quot; tabindex=&quot;-1&quot;&gt;VCV Rack &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;pros:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;runs on a laptop&lt;/li&gt;
@@ -93,7 +93,7 @@ which makes it an obvious candidate.&lt;/p&gt;
 &lt;li&gt;would require inclusion of external controllers to achieve a tactile interface&lt;/li&gt;
 &lt;li&gt;limited by CPU&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion? &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion? &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-10.01.improv-instrument/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Right now I&#39;m leaning toward VCV Rack as it is the cheapest and
 most open-ended option. RYTM would be my 2nd choice; also &amp;quot;cheapest&amp;quot;,
 but would be more limited in possible outcomes. Eurorack is my 3rd
@@ -104,9 +104,9 @@ achieve the tactile interface I&#39;m desiring.&lt;/p&gt;
 	
 	<entry>
 		<title>EACCES</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-03-08.02.eacces/"/>
+		<link href="https://kindohm.com/blog/2024/2024-03-08.02.eacces/"/>
 		<updated>2024-03-08T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-03-08.02.eacces/</id>
+		<id>https://kindohm.com/blog/2024/2024-03-08.02.eacces/</id>
 		<content type="html">&lt;p&gt;Fun fact: I made an album of modular synthesizer music
 in 2023 under the moniker &lt;em&gt;&lt;em&gt;eacces&lt;/em&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;You can find it on Bandcamp,
@@ -120,9 +120,9 @@ and it&#39;s also available for free direct download at
 	
 	<entry>
 		<title>Colorable</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-03-08.01.colorable/"/>
+		<link href="https://kindohm.com/blog/2024/2024-03-08.01.colorable/"/>
 		<updated>2024-03-08T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-03-08.01.colorable/</id>
+		<id>https://kindohm.com/blog/2024/2024-03-08.01.colorable/</id>
 		<content type="html">&lt;p&gt;A tidbit about this blog:&lt;/p&gt;
 &lt;p&gt;I am using &lt;a href=&quot;https://github.com/jxnblk/colorable&quot;&gt;jxnblk&#39;s &lt;code&gt;colorable&lt;/code&gt;&lt;/a&gt;
 library to produce a random color palette for this site every time it is built[1].&lt;/p&gt;
@@ -134,10 +134,10 @@ contrast. If none do, then I repeat the process until a good contrast
 combo is obtained.&lt;/p&gt;
 &lt;p&gt;Then I put the foreground and background colors in the Eleventy &lt;code&gt;metadata.js&lt;/code&gt;
 data file, which is then used in the base layout&#39;s &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;img src=&quot;https://kindohm.com/blog2/img/I5BJcn57dy-250.png&quot; alt=&quot;colorable 01&quot;&gt;
-&lt;img src=&quot;https://kindohm.com/blog2/img/NWuWsTXl5c-250.png&quot; alt=&quot;colorable 02&quot;&gt;
-&lt;img src=&quot;https://kindohm.com/blog2/img/oprOCxzoW2-250.png&quot; alt=&quot;colorable 03&quot;&gt;
-&lt;img src=&quot;https://kindohm.com/blog2/img/Bc3EUD5Wps-250.png&quot; alt=&quot;colorable 04&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/I5BJcn57dy-250.png&quot; alt=&quot;colorable 01&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/NWuWsTXl5c-250.png&quot; alt=&quot;colorable 02&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/oprOCxzoW2-250.png&quot; alt=&quot;colorable 03&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/Bc3EUD5Wps-250.png&quot; alt=&quot;colorable 04&quot;&gt;
 &lt;p&gt;Ugly? Yep. Fun? Yep.&lt;/p&gt;
 &lt;p&gt;[1] It is built every time I push to the git origin&lt;/p&gt;
 </content>
@@ -145,9 +145,9 @@ data file, which is then used in the base layout&#39;s &lt;code&gt;&amp;lt;style
 	
 	<entry>
 		<title>the computer feels good</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-03-06.01.computer-feels-good/"/>
+		<link href="https://kindohm.com/blog/2024/2024-03-06.01.computer-feels-good/"/>
 		<updated>2024-03-06T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-03-06.01.computer-feels-good/</id>
+		<id>https://kindohm.com/blog/2024/2024-03-06.01.computer-feels-good/</id>
 		<content type="html">&lt;p&gt;welp I&#39;m back to making music on the computer for
 the time being 😅&lt;/p&gt;
 &lt;p&gt;I think it&#39;s healthy for creative types to step outside
@@ -170,23 +170,23 @@ create with this toolchain just suits my tastes.&lt;/p&gt;
 	
 	<entry>
 		<title>hosted at</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-03-01.02.domain/"/>
+		<link href="https://kindohm.com/blog/2024/2024-03-01.02.domain/"/>
 		<updated>2024-03-01T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-03-01.02.domain/</id>
+		<id>https://kindohm.com/blog/2024/2024-03-01.02.domain/</id>
 		<content type="html">&lt;p&gt;This site is now hosted at &lt;a href=&quot;https://mikehodnick.xyz&quot;&gt;https://mikehodnick.xyz&lt;/a&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>music - hardware versus computer</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/"/>
+		<link href="https://kindohm.com/blog/2024/2024-03-01.01.hardware-vs-computer/"/>
 		<updated>2024-03-01T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/</id>
+		<id>https://kindohm.com/blog/2024/2024-03-01.01.hardware-vs-computer/</id>
 		<content type="html">&lt;p&gt;I&#39;ve been inspired recently to try and exclusively use hardware
 (synthesizers) for making music. This is quite a change for me
 since my past processes have involved the use of a computer with
 very unconventional tooling (no DAW, just code).&lt;/p&gt;
-&lt;img src=&quot;https://kindohm.com/blog2/img/c00f9I7hwG-600.png&quot; alt=&quot;Elektron Analog RYTM and Syntakt&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/c00f9I7hwG-600.png&quot; alt=&quot;Elektron Analog RYTM and Syntakt&quot;&gt;
 &lt;p&gt;This is what I came up with in my first experiment:&lt;/p&gt;
 &lt;p&gt;&lt;audio controls=&quot;&quot; src=&quot;https://kindohm.nyc3.digitaloceanspaces.com/blog-assets/2024-03-01.01.hardware-vs-computer/2024-02-29.mp3&quot;&gt;
 &lt;a href=&quot;https://kindohm.nyc3.digitaloceanspaces.com/blog-assets/2024-03-01.01.hardware-vs-computer/2024-02-29.mp3&quot;&gt;download&lt;/a&gt;
@@ -202,7 +202,7 @@ my machines and be able to command them quickly.&lt;/p&gt;
 &lt;li&gt;I use two machines which have similar yet different interfaces&lt;/li&gt;
 &lt;li&gt;Figuring out how to play&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;elektron-sequencers-are-deep&quot; tabindex=&quot;-1&quot;&gt;Elektron sequencers are deep &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;elektron-sequencers-are-deep&quot; tabindex=&quot;-1&quot;&gt;Elektron sequencers are deep &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I will always say that TidalCycles is king for sequencing, but
 the Elektron sequencers are a close second. They are so deep!
 The parameter locking and per-step trigger conditions (e.g. fill,
@@ -211,7 +211,7 @@ of the chaos and variation I crave.&lt;/p&gt;
 &lt;p&gt;One of the features on the RYTM is &amp;quot;accent&amp;quot;, which lets you
 add yet another type of variation on a step. I&#39;ve never used this
 feature before.&lt;/p&gt;
-&lt;h3 id=&quot;syntakt-sound-design-is-challenging&quot; tabindex=&quot;-1&quot;&gt;Syntakt sound design is challenging &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;syntakt-sound-design-is-challenging&quot; tabindex=&quot;-1&quot;&gt;Syntakt sound design is challenging &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;It took me years to really get comfortable with the nuance of
 sound design on the RYTM. It&#39;s a deeper synth than it appears
 to be. If you combine its sample layering then you can really
@@ -221,7 +221,7 @@ I just haven&#39;t found my &amp;quot;voice&amp;quot; on that synth yet. I fear 
 it&#39;s going to take me years of hands-on practice with it on
 a nearly daily basis (just like on the RYTM) to finally
 get comfortable with it.&lt;/p&gt;
-&lt;h3 id=&quot;many-many-many-patterns&quot; tabindex=&quot;-1&quot;&gt;many many many patterns &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;many-many-many-patterns&quot; tabindex=&quot;-1&quot;&gt;many many many patterns &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I like a lot of variation in my music. I rarely want the same
 sequence to play more than one or twice in a row. The Elektron
 sequencer can help fake out your ears by adding variation per
@@ -231,7 +231,7 @@ patterns and changing between them on the fly.&lt;/p&gt;
 The only real feasible way to do it on the Elektron synths is
 to &lt;em&gt;copy&lt;/em&gt; patterns. Good luck trying to create each pattern
 from scratch!&lt;/p&gt;
-&lt;h3 id=&quot;two-machines-similar-but-different&quot; tabindex=&quot;-1&quot;&gt;two machines, similar but different &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;two-machines-similar-but-different&quot; tabindex=&quot;-1&quot;&gt;two machines, similar but different &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The RYTM and Syntakt are very similar in their interfaces. They
 both have a similar LED display with a consistent presentation
 of eight synth parameters per voice. Their sequencers are programmed
@@ -245,7 +245,7 @@ in the same way.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;There&#39;s a bit of cognative overload when operating both
 machines at the same time.&lt;/p&gt;
-&lt;h3 id=&quot;figuring-out-how-to-play&quot; tabindex=&quot;-1&quot;&gt;Figuring out how to play &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;figuring-out-how-to-play&quot; tabindex=&quot;-1&quot;&gt;Figuring out how to play &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-03-01.01.hardware-vs-computer/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I&#39;m too accustomed to improvising in TidalCycles code.&lt;/p&gt;
 &lt;p&gt;&amp;quot;Playing&amp;quot; on the Elektron machines is not natural to me (yet).
 I&#39;m still developing some muscle memory for certain actions,
@@ -261,9 +261,9 @@ and I need to read the manuals some more.&lt;/p&gt;
 	
 	<entry>
 		<title></title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-02-28.01.inspired-by/"/>
+		<link href="https://kindohm.com/blog/2024/2024-02-28.01.inspired-by/"/>
 		<updated>2024-02-28T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-02-28.01.inspired-by/</id>
+		<id>https://kindohm.com/blog/2024/2024-02-28.01.inspired-by/</id>
 		<content type="html">&lt;p&gt;This blog was inspired by my pal
 &lt;a href=&quot;https://zapplebee.online/&quot;&gt;zapplebee&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -271,9 +271,9 @@ and I need to read the manuals some more.&lt;/p&gt;
 	
 	<entry>
 		<title></title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-02-27.03.ipad/"/>
+		<link href="https://kindohm.com/blog/2024/2024-02-27.03.ipad/"/>
 		<updated>2024-02-27T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-02-27.03.ipad/</id>
+		<id>https://kindohm.com/blog/2024/2024-02-27.03.ipad/</id>
 		<content type="html">&lt;p&gt;One thing i wanted to try was creating posts on the iPad.&lt;/p&gt;
 &lt;p&gt;I&#39;m using the Termius app to ssh into my server, where i can
 author posts and fully interact with the repo.&lt;/p&gt;
@@ -284,11 +284,11 @@ linux on iPad, but was too bare bones for my liking.&lt;/p&gt;
 	
 	<entry>
 		<title>this blog</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/"/>
+		<link href="https://kindohm.com/blog/2024/2024-02-27.02.this-blog/"/>
 		<updated>2024-02-27T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/</id>
+		<id>https://kindohm.com/blog/2024/2024-02-27.02.this-blog/</id>
 		<content type="html">&lt;p&gt;A bit of info about how I built this blog:&lt;/p&gt;
-&lt;h3 id=&quot;static-site-generator&quot; tabindex=&quot;-1&quot;&gt;static site generator &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;static-site-generator&quot; tabindex=&quot;-1&quot;&gt;static site generator &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I&#39;m using &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt;
 for static site generation. I&#39;ve been a fan of 11ty for a while
 and was already familiar with it, so I just kept using it.&lt;/p&gt;
@@ -307,20 +307,20 @@ speaks for itself 🤷, but that&#39;s kinda disingenuous.&lt;/p&gt;
 &lt;li&gt;posts/entries in a &lt;code&gt;content/blog&lt;/code&gt; folder&lt;/li&gt;
 &lt;li&gt;trivial HTML shell layout in &lt;code&gt;_includes/layout.njk&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I also added &lt;a href=&quot;https://kindohm.com/blog2/rss.xml&quot;&gt;rss&lt;/a&gt; and &lt;a href=&quot;https://kindohm.com/blog2/atom.xml&quot;&gt;atom&lt;/a&gt;
+&lt;p&gt;I also added &lt;a href=&quot;https://kindohm.com/rss.xml&quot;&gt;rss&lt;/a&gt; and &lt;a href=&quot;https://kindohm.com/atom.xml&quot;&gt;atom&lt;/a&gt;
 feeds using the &lt;code&gt;@11ty/eleventy-plugin-rss&lt;/code&gt; library.&lt;/p&gt;
-&lt;h3 id=&quot;mobile-screen-sizes&quot; tabindex=&quot;-1&quot;&gt;mobile / screen sizes &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;mobile-screen-sizes&quot; tabindex=&quot;-1&quot;&gt;mobile / screen sizes &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;There&#39;s no nav, columns, or anything funky about the layout here, so
 it just fine on a mobile screen out of the box:&lt;/p&gt;
-&lt;img src=&quot;https://kindohm.com/blog2/img/BUy4_ydavp-600.png&quot; alt=&quot;mobile view&quot;&gt;
-&lt;h3 id=&quot;colocated-images&quot; tabindex=&quot;-1&quot;&gt;colocated images &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;img src=&quot;https://kindohm.com/img/BUy4_ydavp-600.png&quot; alt=&quot;mobile view&quot;&gt;
+&lt;h3 id=&quot;colocated-images&quot; tabindex=&quot;-1&quot;&gt;colocated images &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Colocating images with posts in Eleventy wasn&#39;t intuitive to figure
 out. I referenced these items to accomplish it:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://gfscott.com/blog/eleventy-img-without-central-image-directory/&quot;&gt;Using the Eleventy Image plugin without a central image folder&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/docs/plugins/image/#asynchronous-shortcode&quot;&gt;Eleventy image shortcode&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;build-deploy-hosting&quot; tabindex=&quot;-1&quot;&gt;build/deploy/hosting &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog2/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;build-deploy-hosting&quot; tabindex=&quot;-1&quot;&gt;build/deploy/hosting &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The source code for this blog is located on &lt;a href=&quot;http://github.com&quot;&gt;github.com&lt;/a&gt;, so I&#39;m just using github actions
 and a &lt;code&gt;gh-pages&lt;/code&gt; branch to host the site.&lt;/p&gt;
 &lt;p&gt;Building a static site with a &lt;code&gt;yarn&lt;/code&gt; command is pretty trivial in a github action. After that,
@@ -357,9 +357,9 @@ to render correctly when they have blank lines.&lt;/s&gt;&lt;/p&gt;
 	
 	<entry>
 		<title>first</title>
-		<link href="https://kindohm.com/blog2/blog/2024/2024-02-27.01.first/"/>
+		<link href="https://kindohm.com/blog/2024/2024-02-27.01.first/"/>
 		<updated>2024-02-27T00:00:00Z</updated>
-		<id>https://kindohm.com/blog2/blog/2024/2024-02-27.01.first/</id>
+		<id>https://kindohm.com/blog/2024/2024-02-27.01.first/</id>
 		<content type="html">&lt;p&gt;I&#39;m Mike. I&#39;ve been a software engineer since 1998. My
 biggest interest in life is making experimental music with
 electronics and computers. I also love backpacking/camping/hiking
