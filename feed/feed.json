@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://kindohm.com/blog/2024/2024-03-13.01.battery-bank/",
+			"url": "https://kindohm.com/blog/2024/2024-03-13.01.battery-bank/",
+			"title": "battery bank",
+			"content_html": "<p>Just picked up a battery bank with an AC plug:</p>\n<img src=\"https://kindohm.com/img/FQ1LLSUnsZ-600.png\" alt=\"battery bank\">\n<p><a href=\"https://chargetech.com/products/premium-27k-ac-battery-pack\">got it from Chargetech</a></p>\n<p>Been inspired by some of Bogdan Raczynski's posts about\nmaking music with your environment. We'll see how it goes.</p>\n",
+			"date_published": "2024-03-13T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://kindohm.com/blog/2024/2024-03-10.02.paging/",
 			"url": "https://kindohm.com/blog/2024/2024-03-10.02.paging/",
 			"title": "paging",

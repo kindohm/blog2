@@ -4,12 +4,25 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-03-10T00:00:00Z</updated>
+	<updated>2024-03-13T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title>battery bank</title>
+		<link href="https://kindohm.com/blog/2024/2024-03-13.01.battery-bank/"/>
+		<updated>2024-03-13T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-03-13.01.battery-bank/</id>
+		<content type="html">&lt;p&gt;Just picked up a battery bank with an AC plug:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/FQ1LLSUnsZ-600.png&quot; alt=&quot;battery bank&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://chargetech.com/products/premium-27k-ac-battery-pack&quot;&gt;got it from Chargetech&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Been inspired by some of Bogdan Raczynski&#39;s posts about
+making music with your environment. We&#39;ll see how it goes.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>paging</title>
