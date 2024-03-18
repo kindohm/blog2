@@ -1,7 +1,8 @@
 body {
-	font-family: monospace;
-	text-align: center;
-	color: #444;
+  font-family: monospace;
+  text-align: center;
+  color: #444;
+  line-height: 1.5rem;
 }
 
 body,
@@ -14,66 +15,70 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 .container {
-	margin: auto;
-	text-align: left;
-	max-width: 600px;
-	padding: 1rem;
+  margin: auto;
+  text-align: left;
+  max-width: 600px;
+  padding: 1rem;
 }
 
 article img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 h1,
 h2,
 h3 {
-	margin-top: 1rem;
-	font-weight: normal;
+  margin-top: 1rem;
+  font-weight: normal;
 }
 
 pre {
-	background-color: #eee;
-	padding: 0.5rem;
-	overflow-x: auto;
+  background-color: #eee;
+  padding: 0.5rem;
+  overflow-x: auto;
 }
 
 code {
-	background-color: #eee;
-	color: #ff6666;
+  background-color: #eee;
+  color: #ff6666;
 }
 
 pre code {
-	color: #444;
+  color: #444;
 }
 
 footer {
-	margin-top: 3rem;
-	font-size: 12px;
-	color: #999;
+  margin-top: 3rem;
+  font-size: 12px;
+  color: #999;
 }
 
 h2::before {
-	content: "## ";
+  content: "## ";
 }
 
 h3::before {
-	content: "### ";
+  content: "### ";
 }
 
 .no-before::before {
-	content: none;
+  content: none;
 }
 
 .visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+p {
+  margin-top: 1.5rem;
 }

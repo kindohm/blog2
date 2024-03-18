@@ -11,6 +11,30 @@
 	},
 	"items": [
 		{
+			"id": "https://kindohm.com/blog/2024/2024-03-18.spam/",
+			"url": "https://kindohm.com/blog/2024/2024-03-18.spam/",
+			"title": "",
+			"content_html": "<p>Just made <a href=\"https://wildspam.xyz\">wildspam.xyz</a>\nso I dunno maybe go check it out 🍔</p>\n",
+			"date_published": "2024-03-18T00:00:00Z"
+		}
+		,
+		{
+			"id": "https://kindohm.com/blog/2024/2024-03-18.improv/",
+			"url": "https://kindohm.com/blog/2024/2024-03-18.improv/",
+			"title": "",
+			"content_html": "<p>Played a lot with minimal compositions on the RYTM\nthis past weekend. My music is usually filled with so\nmuch complexity and chaos; it's a nice change to\nwork with something simple. It's satisfying to\nuse a single sound and manipulate controls\nover a simple sequence.</p>\n",
+			"date_published": "2024-03-18T00:00:00Z"
+		}
+		,
+		{
+			"id": "https://kindohm.com/blog/2024/2024-03-18.battery/",
+			"url": "https://kindohm.com/blog/2024/2024-03-18.battery/",
+			"title": "",
+			"content_html": "<p>My battery pack arrived last week but it's been too\nannoyingly chilly and windy to get out. Terrible excuse,\nbut I didn't really want to deal with wind noise on\nmy H1n or figure out my field improv setup in the midst\nof snow gusts.</p>\n<p>Suffice to say, I tried out my setup in the kitchen\nand it works 🤙🏻</p>\n",
+			"date_published": "2024-03-18T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://kindohm.com/blog/2024/2024-03-13.01.battery-bank/",
 			"url": "https://kindohm.com/blog/2024/2024-03-13.01.battery-bank/",
 			"title": "battery bank",

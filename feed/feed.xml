@@ -4,12 +4,51 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-03-13T00:00:00Z</updated>
+	<updated>2024-03-18T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title></title>
+		<link href="https://kindohm.com/blog/2024/2024-03-18.spam/"/>
+		<updated>2024-03-18T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-03-18.spam/</id>
+		<content type="html">&lt;p&gt;Just made &lt;a href=&quot;https://wildspam.xyz&quot;&gt;wildspam.xyz&lt;/a&gt;
+so I dunno maybe go check it out 🍔&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title></title>
+		<link href="https://kindohm.com/blog/2024/2024-03-18.improv/"/>
+		<updated>2024-03-18T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-03-18.improv/</id>
+		<content type="html">&lt;p&gt;Played a lot with minimal compositions on the RYTM
+this past weekend. My music is usually filled with so
+much complexity and chaos; it&#39;s a nice change to
+work with something simple. It&#39;s satisfying to
+use a single sound and manipulate controls
+over a simple sequence.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title></title>
+		<link href="https://kindohm.com/blog/2024/2024-03-18.battery/"/>
+		<updated>2024-03-18T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-03-18.battery/</id>
+		<content type="html">&lt;p&gt;My battery pack arrived last week but it&#39;s been too
+annoyingly chilly and windy to get out. Terrible excuse,
+but I didn&#39;t really want to deal with wind noise on
+my H1n or figure out my field improv setup in the midst
+of snow gusts.&lt;/p&gt;
+&lt;p&gt;Suffice to say, I tried out my setup in the kitchen
+and it works 🤙🏻&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>battery bank</title>
