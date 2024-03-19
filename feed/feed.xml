@@ -4,12 +4,21 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-03-18T00:00:00Z</updated>
+	<updated>2024-03-19T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title></title>
+		<link href="https://kindohm.com/blog/2024/2024-03-19.01/"/>
+		<updated>2024-03-19T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-03-19.01/</id>
+		<content type="html">&lt;p&gt;the RYTM tom machine is underrated. change my mind.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title></title>
