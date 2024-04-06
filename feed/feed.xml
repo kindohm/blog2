@@ -4,12 +4,83 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-03-19T00:00:00Z</updated>
+	<updated>2024-04-06T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title>Automated Bandcamp Downloads</title>
+		<link href="https://kindohm.com/blog/2024/2024-04-06.01.bandcamp-downloads/"/>
+		<updated>2024-04-06T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-04-06.01.bandcamp-downloads/</id>
+		<content type="html">&lt;p&gt;I almost exclusively use &lt;a href=&quot;https://bandcamp.com&quot;&gt;Bandcamp&lt;/a&gt;
+to buy music. And yes, I buy my music. I use
+&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.kodarkooperativet.blackplayerex&amp;hl=en_US&amp;gl=US&amp;pli=1&quot;&gt;BlackPlayer EX&lt;/a&gt;
+on Android to listen to my music.&lt;/p&gt;
+&lt;p&gt;The biggest challenge with Bandcamp is that there is friction between
+purchasing the digital album and then getting it loaded onto my
+Android. The only real supported path to downloading the .zip file
+of mp3&#39;s is to use Bandcamp&#39;s desktop site, and involves a mildly
+infuriating process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open up your Bandcamp collection&lt;/li&gt;
+&lt;li&gt;Click the download link of your chosen album&lt;/li&gt;
+&lt;li&gt;Click the download link on the download page&lt;/li&gt;
+&lt;li&gt;Wait for the slow Bandcamp download&lt;/li&gt;
+&lt;li&gt;Extract the contents of the .zip archive&lt;/li&gt;
+&lt;li&gt;Copy the files to smartphone&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To add insult to injury, I use MacOS as my desktop OS, and for the life of me
+I cannot figure out how to copy files over USB from MacOS to Android.
+Yes, I know about the Android File Transfer app, but it doesn&#39;t seem to
+recognize my device.&lt;/p&gt;
+&lt;p&gt;So I&#39;m left with Windows, which is where our technical fun begins.&lt;/p&gt;
+&lt;p&gt;My goal is to automate steps 1 through 5 above.&lt;/p&gt;
+&lt;h3 id=&quot;automating-the-downloads&quot; tabindex=&quot;-1&quot;&gt;Automating the downloads &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-04-06.01.bandcamp-downloads/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Steps 1 through 4 can be easily automated with the
+&lt;a href=&quot;https://github.com/easlice/bandcamp-downloader&quot;&gt;bandcamp-downloader&lt;/a&gt;
+that you can get from github.&lt;/p&gt;
+&lt;p&gt;On Windows, I wanted to create a simple .bat script so that I didn&#39;t
+have to remember the specific &lt;code&gt;bandcamp-downloader.py&lt;/code&gt; command to run
+every time. Here&#39;s my script:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;python c:&#92;Users&#92;mike&#92;code&#92;bandcamp-downloader&#92;bandcamp-downloader.py ^
+  kindohm ^
+  --download-since 2020-01-01 ^
+  --directory c:&#92;Users&#92;mike&#92;bandcamp-downloaded ^
+  --filename-format &amp;quot;{artist}.{title}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;EASY.&lt;/p&gt;
+&lt;h3 id=&quot;unzipping-the-archives&quot; tabindex=&quot;-1&quot;&gt;Unzipping the archives &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-04-06.01.bandcamp-downloads/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Then things got a little trickier. I don&#39;t know Windows batch file
+scripting very well. Anyway, this script will then loop through
+all .zip files in the download directory, create a new directory for
+each individual archive, and unzip the archive to the new directory:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for /R &amp;quot;C:&#92;Users&#92;mike&#92;bandcamp-downloaded&amp;quot; %%I in (&amp;quot;*.zip&amp;quot;) do (
+  mkdir &amp;quot;%%~dpnI&amp;quot;
+  &amp;quot;tar&amp;quot; -xf &amp;quot;%%~fI&amp;quot; -C &amp;quot;%%~dpnI&amp;quot;
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I was pleasantly surprised to find that &lt;code&gt;tar&lt;/code&gt; ships on Windows 11.&lt;/p&gt;
+&lt;p&gt;I had to do some digging to figure out how to come up with the right
+arguments to &lt;code&gt;mkdir&lt;/code&gt; to create the directory before unzipping:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir &amp;quot;%%~dpnI&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;d&lt;/code&gt; == drive letter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt; == parent directory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt; == file name without extension&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🤷‍♂️&lt;/p&gt;
+&lt;h3 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-04-06.01.bandcamp-downloads/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;So now I can just run these scripts whenever I want to refresh my
+local Bandcamp library.&lt;/p&gt;
+&lt;p&gt;Unfortunately I still have to manually copy the unzipped files to
+my smartphone by hand, but that ain&#39;t so bad.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title></title>

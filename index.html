@@ -97,15 +97,15 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 		</style>
 		<style>
 			body {
-				color: #C8DE13;
-				background-color: #2F3828;
+				color: #681615;
+				background-color: #73F4A2;
 			}
 
 			a,
 			a:active,
 			a:link,
 			a:visited {
-				color: #C8DE13;
+				color: #681615;
 			}
 		</style>
 	</head>
@@ -123,6 +123,85 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 		<a href="/why">why?</a>
 	</h3>
 </div>
+	<article>
+		<p>
+			---</p>
+		<p>
+			<a href="/blog/2024/2024-04-06.01.bandcamp-downloads/">
+				<h2>Automated Bandcamp Downloads</h2>
+			</a>
+		</p>
+			<p>
+		<time>2024-04-06</time>
+	</p>
+
+		<div>
+			<p>I almost exclusively use <a href="https://bandcamp.com">Bandcamp</a>
+to buy music. And yes, I buy my music. I use
+<a href="https://play.google.com/store/apps/details?id=com.kodarkooperativet.blackplayerex&hl=en_US&gl=US&pli=1">BlackPlayer EX</a>
+on Android to listen to my music.</p>
+<p>The biggest challenge with Bandcamp is that there is friction between
+purchasing the digital album and then getting it loaded onto my
+Android. The only real supported path to downloading the .zip file
+of mp3's is to use Bandcamp's desktop site, and involves a mildly
+infuriating process:</p>
+<ol>
+<li>Open up your Bandcamp collection</li>
+<li>Click the download link of your chosen album</li>
+<li>Click the download link on the download page</li>
+<li>Wait for the slow Bandcamp download</li>
+<li>Extract the contents of the .zip archive</li>
+<li>Copy the files to smartphone</li>
+</ol>
+<p>To add insult to injury, I use MacOS as my desktop OS, and for the life of me
+I cannot figure out how to copy files over USB from MacOS to Android.
+Yes, I know about the Android File Transfer app, but it doesn't seem to
+recognize my device.</p>
+<p>So I'm left with Windows, which is where our technical fun begins.</p>
+<p>My goal is to automate steps 1 through 5 above.</p>
+<h3 id="automating-the-downloads" tabindex="-1">Automating the downloads <a class="header-anchor" href="#automating-the-downloads">#</a></h3>
+<p>Steps 1 through 4 can be easily automated with the
+<a href="https://github.com/easlice/bandcamp-downloader">bandcamp-downloader</a>
+that you can get from github.</p>
+<p>On Windows, I wanted to create a simple .bat script so that I didn't
+have to remember the specific <code>bandcamp-downloader.py</code> command to run
+every time. Here's my script:</p>
+<pre><code>python c:\Users\mike\code\bandcamp-downloader\bandcamp-downloader.py ^
+  kindohm ^
+  --download-since 2020-01-01 ^
+  --directory c:\Users\mike\bandcamp-downloaded ^
+  --filename-format &quot;{artist}.{title}&quot;
+</code></pre>
+<p>EASY.</p>
+<h3 id="unzipping-the-archives" tabindex="-1">Unzipping the archives <a class="header-anchor" href="#unzipping-the-archives">#</a></h3>
+<p>Then things got a little trickier. I don't know Windows batch file
+scripting very well. Anyway, this script will then loop through
+all .zip files in the download directory, create a new directory for
+each individual archive, and unzip the archive to the new directory:</p>
+<pre><code>for /R &quot;C:\Users\mike\bandcamp-downloaded&quot; %%I in (&quot;*.zip&quot;) do (
+  mkdir &quot;%%~dpnI&quot;
+  &quot;tar&quot; -xf &quot;%%~fI&quot; -C &quot;%%~dpnI&quot;
+)
+</code></pre>
+<p>I was pleasantly surprised to find that <code>tar</code> ships on Windows 11.</p>
+<p>I had to do some digging to figure out how to come up with the right
+arguments to <code>mkdir</code> to create the directory before unzipping:</p>
+<pre><code>mkdir &quot;%%~dpnI&quot;
+</code></pre>
+<ul>
+<li><code>d</code> == drive letter</li>
+<li><code>p</code> == parent directory</li>
+<li><code>n</code> == file name without extension</li>
+</ul>
+<p>🤷‍♂️</p>
+<h3 id="conclusion" tabindex="-1">Conclusion <a class="header-anchor" href="#conclusion">#</a></h3>
+<p>So now I can just run these scripts whenever I want to refresh my
+local Bandcamp library.</p>
+<p>Unfortunately I still have to manually copy the unzipped files to
+my smartphone by hand, but that ain't so bad.</p>
+
+		</div>
+	</article>
 	<article>
 		<p>
 			---</p>
@@ -703,7 +782,7 @@ many paragraphs. No idea what to expect.</p>
 			</main>
 
 			<footer>&copy; Copyright 2024 Mike Hodnick. 
-				Unauthorized duplication may result in sudden death or dismemberment.
+				Unauthorized duplication may result in night sweats.
 			</footer>
 
 		</div>

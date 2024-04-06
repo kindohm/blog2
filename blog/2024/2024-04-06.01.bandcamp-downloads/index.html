@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>an improv instrument</title>
+		<title>Automated Bandcamp Downloads</title>
 		<meta name="description" content="Dropping stuff here so I don&#39;t forget.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mike Hodnick&#39;s Blog">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mike Hodnick&#39;s Blog">
@@ -120,94 +120,84 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 
 <article>
 	<h2>
-		<a href="">an improv instrument</a>
+		<a href="">Automated Bandcamp Downloads</a>
 	</h2>
 	<p>
-		<time>2024-03-10</time>
+		<time>2024-04-06</time>
 	</p>
-	<p>On my long drive(s) today I was thinking a lot about
-crafting a new musical improv system for collaborative
-performances. I want to be able to pack up a small
-system and take it with me to jam with other folks.</p>
-<p>My usual approach of creating micro-compositions in
-TidalCycles doesn't seem to fit this need. I want
-something that wouldn't require any typing or
-major preparation beforehand, and I think I need something
-that is more tactile.</p>
-<h3 id="requirements" tabindex="-1">Requirements <a class="header-anchor" href="#requirements">#</a></h3>
-<p>So what are my requirements?</p>
-<p>I don't know! Maybe stuff like this:</p>
+	<p>I almost exclusively use <a href="https://bandcamp.com">Bandcamp</a>
+to buy music. And yes, I buy my music. I use
+<a href="https://play.google.com/store/apps/details?id=com.kodarkooperativet.blackplayerex&hl=en_US&gl=US&pli=1">BlackPlayer EX</a>
+on Android to listen to my music.</p>
+<p>The biggest challenge with Bandcamp is that there is friction between
+purchasing the digital album and then getting it loaded onto my
+Android. The only real supported path to downloading the .zip file
+of mp3's is to use Bandcamp's desktop site, and involves a mildly
+infuriating process:</p>
+<ol>
+<li>Open up your Bandcamp collection</li>
+<li>Click the download link of your chosen album</li>
+<li>Click the download link on the download page</li>
+<li>Wait for the slow Bandcamp download</li>
+<li>Extract the contents of the .zip archive</li>
+<li>Copy the files to smartphone</li>
+</ol>
+<p>To add insult to injury, I use MacOS as my desktop OS, and for the life of me
+I cannot figure out how to copy files over USB from MacOS to Android.
+Yes, I know about the Android File Transfer app, but it doesn't seem to
+recognize my device.</p>
+<p>So I'm left with Windows, which is where our technical fun begins.</p>
+<p>My goal is to automate steps 1 through 5 above.</p>
+<h3 id="automating-the-downloads" tabindex="-1">Automating the downloads <a class="header-anchor" href="#automating-the-downloads">#</a></h3>
+<p>Steps 1 through 4 can be easily automated with the
+<a href="https://github.com/easlice/bandcamp-downloader">bandcamp-downloader</a>
+that you can get from github.</p>
+<p>On Windows, I wanted to create a simple .bat script so that I didn't
+have to remember the specific <code>bandcamp-downloader.py</code> command to run
+every time. Here's my script:</p>
+<pre><code>python c:\Users\mike\code\bandcamp-downloader\bandcamp-downloader.py ^
+  kindohm ^
+  --download-since 2020-01-01 ^
+  --directory c:\Users\mike\bandcamp-downloaded ^
+  --filename-format &quot;{artist}.{title}&quot;
+</code></pre>
+<p>EASY.</p>
+<h3 id="unzipping-the-archives" tabindex="-1">Unzipping the archives <a class="header-anchor" href="#unzipping-the-archives">#</a></h3>
+<p>Then things got a little trickier. I don't know Windows batch file
+scripting very well. Anyway, this script will then loop through
+all .zip files in the download directory, create a new directory for
+each individual archive, and unzip the archive to the new directory:</p>
+<pre><code>for /R &quot;C:\Users\mike\bandcamp-downloaded&quot; %%I in (&quot;*.zip&quot;) do (
+  mkdir &quot;%%~dpnI&quot;
+  &quot;tar&quot; -xf &quot;%%~fI&quot; -C &quot;%%~dpnI&quot;
+)
+</code></pre>
+<p>I was pleasantly surprised to find that <code>tar</code> ships on Windows 11.</p>
+<p>I had to do some digging to figure out how to come up with the right
+arguments to <code>mkdir</code> to create the directory before unzipping:</p>
+<pre><code>mkdir &quot;%%~dpnI&quot;
+</code></pre>
 <ul>
-<li>immediately turn on the system and make sound from manual controls</li>
-<li>react quickly to what I hear, or to what other performers are doing</li>
-<li>be able to produce percussive or textural sounds when needed</li>
-<li>be able to produce harsher or softer sounds when needed</li>
-<li>introduce elements of repetition, whether that's looping, melody, or timbre</li>
+<li><code>d</code> == drive letter</li>
+<li><code>p</code> == parent directory</li>
+<li><code>n</code> == file name without extension</li>
 </ul>
-<p>So what are the options?</p>
-<h3 id="tidalcycles-samples" tabindex="-1">TidalCycles + Samples <a class="header-anchor" href="#tidalcycles-samples">#</a></h3>
-<p>pros:</p>
-<ul>
-<li>I know TidalCycles extremely well</li>
-<li>range possibilities for open improv is very large</li>
-</ul>
-<p>cons:</p>
-<ul>
-<li>high latency to react to changes on the fly</li>
-<li>limited by samples; can require massive amounts of typing to tweak sounds in a desired way</li>
-</ul>
-<h3 id="elektron-analog-rytm" tabindex="-1">Elektron Analog RYTM <a class="header-anchor" href="#elektron-analog-rytm">#</a></h3>
-<p>I know the RYTM better than any other piece of gear I own,
-which makes it an obvious candidate.</p>
-<p>pros:</p>
-<ul>
-<li>comfortable synth for me</li>
-</ul>
-<p>cons:</p>
-<ul>
-<li>performance macros need to be created ahead of time</li>
-<li>making changes outside of the performance macros require menu-diving</li>
-<li>performance macros are based on touch pressure and can't be easily held</li>
-</ul>
-<h3 id="eurorack-modular" tabindex="-1">Eurorack Modular <a class="header-anchor" href="#eurorack-modular">#</a></h3>
-<p>pros:</p>
-<ul>
-<li>possibilities are more open-ended</li>
-<li>can patch/craft exactly the system I want</li>
-</ul>
-<p>cons:</p>
-<ul>
-<li>I likely do not own all of the components I would want; expensive</li>
-<li>limited by case capacity</li>
-</ul>
-<h3 id="vcv-rack" tabindex="-1">VCV Rack <a class="header-anchor" href="#vcv-rack">#</a></h3>
-<p>pros:</p>
-<ul>
-<li>runs on a laptop</li>
-<li>possibilities are very open-ended</li>
-<li>can craft the system I want</li>
-</ul>
-<p>cons:</p>
-<ul>
-<li>would require inclusion of external controllers to achieve a tactile interface</li>
-<li>limited by CPU</li>
-</ul>
-<h3 id="conclusion" tabindex="-1">Conclusion? <a class="header-anchor" href="#conclusion">#</a></h3>
-<p>Right now I'm leaning toward VCV Rack as it is the cheapest and
-most open-ended option. RYTM would be my 2nd choice; also &quot;cheapest&quot;,
-but would be more limited in possible outcomes. Eurorack is my 3rd
-choice, as I would likely need to acquire some new modules to
-achieve the tactile interface I'm desiring.</p>
+<p>🤷‍♂️</p>
+<h3 id="conclusion" tabindex="-1">Conclusion <a class="header-anchor" href="#conclusion">#</a></h3>
+<p>So now I can just run these scripts whenever I want to refresh my
+local Bandcamp library.</p>
+<p>Unfortunately I still have to manually copy the unzipped files to
+my smartphone by hand, but that ain't so bad.</p>
 
 
 </article>
 			</main>
 
 			<footer>&copy; Copyright 2024 Mike Hodnick. 
-				Unauthorized duplication may result in dizziness.
+				Unauthorized duplication may result in dry mouth.
 			</footer>
 
 		</div>
-		<!-- Current page: /blog/2024/2024-03-10.01.improv-instrument/ -->
+		<!-- Current page: /blog/2024/2024-04-06.01.bandcamp-downloads/ -->
 	</body>
 </html>
