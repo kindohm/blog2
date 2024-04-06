@@ -74,6 +74,11 @@ arguments to &lt;code&gt;mkdir&lt;/code&gt; to create the directory before unzip
 &lt;li&gt;&lt;code&gt;n&lt;/code&gt; == file name without extension&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;🤷‍♂️&lt;/p&gt;
+&lt;h3 id=&quot;future-enhancements&quot; tabindex=&quot;-1&quot;&gt;Future Enhancements &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-04-06.01.bandcamp-downloads/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;delete the .zip files upon successful archive extraction&lt;/li&gt;
+&lt;li&gt;automatically copy to phone&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-04-06.01.bandcamp-downloads/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;So now I can just run these scripts whenever I want to refresh my
 local Bandcamp library.&lt;/p&gt;
