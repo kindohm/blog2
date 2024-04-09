@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://kindohm.com/blog/2024/2024-04-09.02.colors/",
+			"url": "https://kindohm.com/blog/2024/2024-04-09.02.colors/",
+			"title": "",
+			"content_html": "<p>Because I made the silly decision to randomly generate colors for\nthis blog on every publish, I'm motivated to write something\nwhen it looks like shit to my eyes.</p>\n",
+			"date_published": "2024-04-09T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://kindohm.com/blog/2024/2024-04-09.01.bc-mac-android/",
 			"url": "https://kindohm.com/blog/2024/2024-04-09.01.bc-mac-android/",
 			"title": "Downloading and Unzipping Bandcamp Collection on MacOS",
