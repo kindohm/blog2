@@ -97,15 +97,15 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 		</style>
 		<style>
 			body {
-				color: #EAFD8A;
-				background-color: #560AA3;
+				color: #2E2E38;
+				background-color: #2FF73B;
 			}
 
 			a,
 			a:active,
 			a:link,
 			a:visited {
-				color: #EAFD8A;
+				color: #2E2E38;
 			}
 		</style>
 	</head>
@@ -123,6 +123,36 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 		<a href="/why">why?</a>
 	</h3>
 </div>
+	<article>
+		<p>
+			---</p>
+		<p>
+			<a href="/blog/2024/2024-04-09.01.bc-mac-android/">
+				<h2>Downloading and Unzipping Bandcamp Collection on MacOS</h2>
+			</a>
+		</p>
+			<p>
+		<time>2024-04-09</time>
+	</p>
+
+		<div>
+			<p>Well I finally got the Android File Transfer app working on MacOS,
+so I updated my Bandcamp downloader scripts to work on MacOS.</p>
+<p>Suuuuper easy:</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token shebang important">#!/bin/zsh</span>
+
+python3 ~/code/bandcamp-downloader/bandcamp-downloader.py <span class="token punctuation">\</span>
+	kindohm <span class="token punctuation">\</span>
+	--download-since <span class="token number">2024</span>-04-08 <span class="token punctuation">\</span>
+	<span class="token parameter variable">--directory</span> /Users/kindohm/bandcamp-downloaded <span class="token punctuation">\</span>
+	--filename-format <span class="token string">"{artist}.{title}"</span>
+
+<span class="token builtin class-name">cd</span> ~/bandcamp-downloaded
+
+<span class="token keyword">for</span> <span class="token for-or-select variable">f</span> <span class="token keyword">in</span> *.zip<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">unzip</span> <span class="token string">"<span class="token variable">$f</span>"</span> <span class="token parameter variable">-d</span> <span class="token string">"<span class="token variable">${f<span class="token operator">%</span>.zip}</span>"</span><span class="token punctuation">;</span> <span class="token keyword">done</span></code></pre>
+
+		</div>
+	</article>
 	<article>
 		<p>
 			---</p>
@@ -804,7 +834,7 @@ many paragraphs. No idea what to expect.</p>
 			</main>
 
 			<footer>&copy; Copyright 2024 Mike Hodnick. 
-				Unauthorized duplication may result in night sweats.
+				Unauthorized duplication may result in dry mouth.
 			</footer>
 
 		</div>

@@ -4,12 +4,34 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-04-06T00:00:00Z</updated>
+	<updated>2024-04-09T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title>Downloading and Unzipping Bandcamp Collection on MacOS</title>
+		<link href="https://kindohm.com/blog/2024/2024-04-09.01.bc-mac-android/"/>
+		<updated>2024-04-09T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-04-09.01.bc-mac-android/</id>
+		<content type="html">&lt;p&gt;Well I finally got the Android File Transfer app working on MacOS,
+so I updated my Bandcamp downloader scripts to work on MacOS.&lt;/p&gt;
+&lt;p&gt;Suuuuper easy:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token shebang important&quot;&gt;#!/bin/zsh&lt;/span&gt;
+
+python3 ~/code/bandcamp-downloader/bandcamp-downloader.py &lt;span class=&quot;token punctuation&quot;&gt;&#92;&lt;/span&gt;
+	kindohm &lt;span class=&quot;token punctuation&quot;&gt;&#92;&lt;/span&gt;
+	--download-since &lt;span class=&quot;token number&quot;&gt;2024&lt;/span&gt;-04-08 &lt;span class=&quot;token punctuation&quot;&gt;&#92;&lt;/span&gt;
+	&lt;span class=&quot;token parameter variable&quot;&gt;--directory&lt;/span&gt; /Users/kindohm/bandcamp-downloaded &lt;span class=&quot;token punctuation&quot;&gt;&#92;&lt;/span&gt;
+	--filename-format &lt;span class=&quot;token string&quot;&gt;&quot;{artist}.{title}&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; ~/bandcamp-downloaded
+
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token for-or-select variable&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; *.zip&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;unzip&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$f&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;${f&lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt;.zip}&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title></title>
