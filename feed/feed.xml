@@ -4,12 +4,23 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-04-09T00:00:00Z</updated>
+	<updated>2024-04-10T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title></title>
+		<link href="https://kindohm.com/blog/2024/2024-04-10.insta/"/>
+		<updated>2024-04-10T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-04-10.insta/</id>
+		<content type="html">&lt;p&gt;I can&#39;t can&#39;t &amp;quot;share&amp;quot; stuff to my story on Instagram
+through the website. It&#39;s almost like they want you
+to use the smartphone app. I do not use the smartphone app today.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title></title>
