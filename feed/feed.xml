@@ -4,12 +4,22 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-04-16T00:00:00Z</updated>
+	<updated>2024-05-07T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title></title>
+		<link href="https://kindohm.com/blog/2024/2024-05-07.01.damirat/"/>
+		<updated>2024-05-07T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-05-07.01.damirat/</id>
+		<content type="html">&lt;p&gt;This album is straight up madness.&lt;/p&gt;
+&lt;iframe style=&quot;border: 0; width: 350px; height: 470px;&quot; src=&quot;https://bandcamp.com/EmbeddedPlayer/album=2750019347/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/&quot; seamless=&quot;&quot;&gt;&lt;a href=&quot;https://dingndents.bandcamp.com/album/docyopta&quot;&gt;Docyopta by damirat&lt;/a&gt;&lt;/iframe&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>mobile recording is uninspiring</title>
@@ -29,7 +39,7 @@ appreciation for ambient composers/performers.&lt;/p&gt;
 		<link href="https://kindohm.com/blog/2024/2024-04-10.insta/"/>
 		<updated>2024-04-10T00:00:00Z</updated>
 		<id>https://kindohm.com/blog/2024/2024-04-10.insta/</id>
-		<content type="html">&lt;p&gt;I can&#39;t can&#39;t &amp;quot;share&amp;quot; stuff to my story on Instagram
+		<content type="html">&lt;p&gt;I can&#39;t &amp;quot;share&amp;quot; stuff to my story on Instagram
 through the website. It&#39;s almost like they want you
 to use the smartphone app. I do not use the smartphone app today.&lt;/p&gt;
 </content>

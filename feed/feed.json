@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://kindohm.com/blog/2024/2024-05-07.01.damirat/",
+			"url": "https://kindohm.com/blog/2024/2024-05-07.01.damirat/",
+			"title": "",
+			"content_html": "<p>This album is straight up madness.</p>\n<iframe style=\"border: 0; width: 350px; height: 470px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=2750019347/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/\" seamless=\"\"><a href=\"https://dingndents.bandcamp.com/album/docyopta\">Docyopta by damirat</a></iframe>\n",
+			"date_published": "2024-05-07T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://kindohm.com/blog/2024/2024-04-16.01.mobile-recording/",
 			"url": "https://kindohm.com/blog/2024/2024-04-16.01.mobile-recording/",
 			"title": "mobile recording is uninspiring",
@@ -22,7 +30,7 @@
 			"id": "https://kindohm.com/blog/2024/2024-04-10.insta/",
 			"url": "https://kindohm.com/blog/2024/2024-04-10.insta/",
 			"title": "",
-			"content_html": "<p>I can't can't &quot;share&quot; stuff to my story on Instagram\nthrough the website. It's almost like they want you\nto use the smartphone app. I do not use the smartphone app today.</p>\n",
+			"content_html": "<p>I can't &quot;share&quot; stuff to my story on Instagram\nthrough the website. It's almost like they want you\nto use the smartphone app. I do not use the smartphone app today.</p>\n",
 			"date_published": "2024-04-10T00:00:00Z"
 		}
 		,
