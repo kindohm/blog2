@@ -12,16 +12,16 @@ layout: layouts/home.njk
 
 {%- for entry in collections.posts | reverse%}
 	<article>
-		<p>
-			---</p>
+		<p class="separator">
+			___</p>
 		<p>
 			<a href="{{ entry.url }}">
 				<h2>{{ entry.data | realTitle }}</h2>
 			</a>
 		</p>
-			<p>
-		<time>{{ entry.date | htmlDateString }}</time>
-	</p>
+		<p>
+			<time>{{ entry.date | htmlDateString }}</time>
+		</p>
 
 		<div>
 			{{entry.content | safe}}
