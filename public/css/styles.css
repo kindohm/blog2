@@ -65,14 +65,6 @@ footer {
   font-size: 10px;
 }
 
-/* h2::before {
-  content: "## ";
-}
-
-h3::before {
-  content: "### ";
-} */
-
 .no-before::before {
   content: none;
 }
@@ -92,6 +84,5 @@ p {
 }
 
 .separator {
-  visibility: visible;
   margin-top: 4rem;
 }
