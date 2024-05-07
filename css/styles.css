@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .container {
@@ -34,6 +34,15 @@ h2,
 h3 {
   margin-top: 1rem;
   font-weight: normal;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  margin-top: 4rem;
+  font-size: 18px;
 }
 
 pre {
@@ -57,13 +66,13 @@ footer {
   color: #999;
 }
 
-h2::before {
+/* h2::before {
   content: "## ";
 }
 
 h3::before {
   content: "### ";
-}
+} */
 
 .no-before::before {
   content: none;
@@ -81,4 +90,9 @@ h3::before {
 
 p {
   margin-top: 1.5rem;
+}
+
+.separator {
+  visibility: visible;
+  margin-top: 4rem;
 }
