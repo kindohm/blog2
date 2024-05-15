@@ -4,12 +4,22 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-05-07T00:00:00Z</updated>
+	<updated>2024-05-15T20:21:46Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title></title>
+		<link href="https://kindohm.com/blog/2024/2024.05.15.phone/"/>
+		<updated>2024-05-15T20:21:46Z</updated>
+		<id>https://kindohm.com/blog/2024/2024.05.15.phone/</id>
+		<content type="html">&lt;p&gt;posting from my phone, raw GitHub web browser style.&lt;/p&gt;
+&lt;p&gt;just wanted to see how feasible this is.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Docyopta by damirat</title>
