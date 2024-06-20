@@ -11,11 +11,19 @@
 	},
 	"items": [
 		{
-			"id": "https://kindohm.com/blog/2024/2024.05.15.phone/",
-			"url": "https://kindohm.com/blog/2024/2024.05.15.phone/",
-			"title": "",
+			"id": "https://kindohm.com/blog/2024/2024-06-20.01.remember/",
+			"url": "https://kindohm.com/blog/2024/2024-06-20.01.remember/",
+			"title": "I remembered I had a blog",
+			"content_html": "<p>I just remembered I can write stuff here!</p>\n<p>I've been busy. Went on a 2-week road trip to the Washington/Oregon area\nand have been busy preparing music for various performances.</p>\n<p>So um I made a six-knob MIDI controller housed in a Panera\nfood container.</p>\n<img src=\"https://kindohm.com/img/JUGHueBm4Q-600.png\" alt=\"arduino\">\n<img src=\"https://kindohm.com/img/G0DYswv10T-600.png\" alt=\"panera\">\n<p>The code is silly easy (warning: only works with USB-MIDI Arduino boards like\nthe Arduino Micro):</p>\n<pre><code>#include &lt;MIDIUSB.h&gt;\n\nint analogValues[6];\nconst uint8_t midiChannel = 1;\n\nvoid setup() {\n  analogValues[0] = 0;\n  analogValues[1] = 0;\n  analogValues[2] = 0;\n  analogValues[3] = 0;\n  analogValues[4] = 0;\n  analogValues[5] = 0;\n}\n\nint readAnalogValue(int pin, int index) {\n  int potValue = analogRead(pin);\n  int midiValue = map(potValue, 0, 1023, 0, 127);\n  if (analogValues[index] != midiValue) {\n    analogValues[index] = midiValue;    \n    sendControlChange(midiChannel, index + 1, midiValue);\n  }\n}\n\nvoid loop() {\n\n  readAnalogValue(A0, 0);\n  readAnalogValue(A1, 1);\n  readAnalogValue(A2, 2);\n  readAnalogValue(A3, 3);\n  readAnalogValue(A4, 4);\n  readAnalogValue(A5, 5);\n\n  // delay to avoid flooding MIDI messages\n  delay(10);\n}\n\nvoid sendControlChange(uint8_t channel, uint8_t control, uint8_t value) {\n  midiEventPacket_t event = {0x0B, 0xB0 | (channel - 1), control, value};\n  MidiUSB.sendMIDI(event);\n  MidiUSB.flush();\n}\n</code></pre>\n",
+			"date_published": "2024-06-20T00:00:00Z"
+		}
+		,
+		{
+			"id": "https://kindohm.com/blog/2024/2024-05-15.phone/",
+			"url": "https://kindohm.com/blog/2024/2024-05-15.phone/",
+			"title": "posting from phone",
 			"content_html": "<p>posting from my phone, raw GitHub web browser style.</p>\n<p>just wanted to see how feasible this is.</p>\n",
-			"date_published": "2024-05-15T20:21:46Z"
+			"date_published": "2024-05-15T00:00:00Z"
 		}
 		,
 		{

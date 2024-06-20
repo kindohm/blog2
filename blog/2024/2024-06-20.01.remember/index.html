@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Mike Hodnick&#39;s Blog</title>
+		<title>I remembered I had a blog</title>
 		<meta name="description" content="Dropping stuff here so I don&#39;t forget.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mike Hodnick&#39;s Blog">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mike Hodnick&#39;s Blog">
@@ -101,15 +101,15 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 		</style>
 		<style>
 			body {
-				color: #3F0DD3;
-				background-color: #A4F6D5;
+				color: #0A372A;
+				background-color: #D1D842;
 			}
 
 			a,
 			a:active,
 			a:link,
 			a:visited {
-				color: #3F0DD3;
+				color: #0A372A;
 			}
 		</style>
 	</head>
@@ -124,13 +124,62 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 
 <article>
 	<h2>
-		<a href=""></a>
+		<a href="">I remembered I had a blog</a>
 	</h2>
 	<p>
-		<time>2024-05-15</time>
+		<time>2024-06-20</time>
 	</p>
-	<p>posting from my phone, raw GitHub web browser style.</p>
-<p>just wanted to see how feasible this is.</p>
+	<p>I just remembered I can write stuff here!</p>
+<p>I've been busy. Went on a 2-week road trip to the Washington/Oregon area
+and have been busy preparing music for various performances.</p>
+<p>So um I made a six-knob MIDI controller housed in a Panera
+food container.</p>
+<img src="/img/JUGHueBm4Q-600.png" alt="arduino" />
+<img src="/img/G0DYswv10T-600.png" alt="panera" />
+<p>The code is silly easy (warning: only works with USB-MIDI Arduino boards like
+the Arduino Micro):</p>
+<pre><code>#include &lt;MIDIUSB.h&gt;
+
+int analogValues[6];
+const uint8_t midiChannel = 1;
+
+void setup() {
+  analogValues[0] = 0;
+  analogValues[1] = 0;
+  analogValues[2] = 0;
+  analogValues[3] = 0;
+  analogValues[4] = 0;
+  analogValues[5] = 0;
+}
+
+int readAnalogValue(int pin, int index) {
+  int potValue = analogRead(pin);
+  int midiValue = map(potValue, 0, 1023, 0, 127);
+  if (analogValues[index] != midiValue) {
+    analogValues[index] = midiValue;    
+    sendControlChange(midiChannel, index + 1, midiValue);
+  }
+}
+
+void loop() {
+
+  readAnalogValue(A0, 0);
+  readAnalogValue(A1, 1);
+  readAnalogValue(A2, 2);
+  readAnalogValue(A3, 3);
+  readAnalogValue(A4, 4);
+  readAnalogValue(A5, 5);
+
+  // delay to avoid flooding MIDI messages
+  delay(10);
+}
+
+void sendControlChange(uint8_t channel, uint8_t control, uint8_t value) {
+  midiEventPacket_t event = {0x0B, 0xB0 | (channel - 1), control, value};
+  MidiUSB.sendMIDI(event);
+  MidiUSB.flush();
+}
+</code></pre>
 
 
 </article>
@@ -141,6 +190,6 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 			</footer>
 
 		</div>
-		<!-- Current page: /blog/2024/2024.05.15.phone/ -->
+		<!-- Current page: /blog/2024/2024-06-20.01.remember/ -->
 	</body>
 </html>

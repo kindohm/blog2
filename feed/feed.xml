@@ -4,7 +4,7 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-05-15T20:21:46Z</updated>
+	<updated>2024-06-20T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
@@ -12,10 +12,69 @@
 	</author>
 	
 	<entry>
-		<title></title>
-		<link href="https://kindohm.com/blog/2024/2024.05.15.phone/"/>
-		<updated>2024-05-15T20:21:46Z</updated>
-		<id>https://kindohm.com/blog/2024/2024.05.15.phone/</id>
+		<title>I remembered I had a blog</title>
+		<link href="https://kindohm.com/blog/2024/2024-06-20.01.remember/"/>
+		<updated>2024-06-20T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-06-20.01.remember/</id>
+		<content type="html">&lt;p&gt;I just remembered I can write stuff here!&lt;/p&gt;
+&lt;p&gt;I&#39;ve been busy. Went on a 2-week road trip to the Washington/Oregon area
+and have been busy preparing music for various performances.&lt;/p&gt;
+&lt;p&gt;So um I made a six-knob MIDI controller housed in a Panera
+food container.&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/JUGHueBm4Q-600.png&quot; alt=&quot;arduino&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/G0DYswv10T-600.png&quot; alt=&quot;panera&quot;&gt;
+&lt;p&gt;The code is silly easy (warning: only works with USB-MIDI Arduino boards like
+the Arduino Micro):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;MIDIUSB.h&amp;gt;
+
+int analogValues[6];
+const uint8_t midiChannel = 1;
+
+void setup() {
+  analogValues[0] = 0;
+  analogValues[1] = 0;
+  analogValues[2] = 0;
+  analogValues[3] = 0;
+  analogValues[4] = 0;
+  analogValues[5] = 0;
+}
+
+int readAnalogValue(int pin, int index) {
+  int potValue = analogRead(pin);
+  int midiValue = map(potValue, 0, 1023, 0, 127);
+  if (analogValues[index] != midiValue) {
+    analogValues[index] = midiValue;    
+    sendControlChange(midiChannel, index + 1, midiValue);
+  }
+}
+
+void loop() {
+
+  readAnalogValue(A0, 0);
+  readAnalogValue(A1, 1);
+  readAnalogValue(A2, 2);
+  readAnalogValue(A3, 3);
+  readAnalogValue(A4, 4);
+  readAnalogValue(A5, 5);
+
+  // delay to avoid flooding MIDI messages
+  delay(10);
+}
+
+void sendControlChange(uint8_t channel, uint8_t control, uint8_t value) {
+  midiEventPacket_t event = {0x0B, 0xB0 | (channel - 1), control, value};
+  MidiUSB.sendMIDI(event);
+  MidiUSB.flush();
+}
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>posting from phone</title>
+		<link href="https://kindohm.com/blog/2024/2024-05-15.phone/"/>
+		<updated>2024-05-15T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-05-15.phone/</id>
 		<content type="html">&lt;p&gt;posting from my phone, raw GitHub web browser style.&lt;/p&gt;
 &lt;p&gt;just wanted to see how feasible this is.&lt;/p&gt;
 </content>

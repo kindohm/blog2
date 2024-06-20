@@ -101,15 +101,15 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 		</style>
 		<style>
 			body {
-				color: #3F0DD3;
-				background-color: #A4F6D5;
+				color: #0A372A;
+				background-color: #D1D842;
 			}
 
 			a,
 			a:active,
 			a:link,
 			a:visited {
-				color: #3F0DD3;
+				color: #0A372A;
 			}
 		</style>
 	</head>
@@ -131,8 +131,75 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 		<p class="separator">
 			___</p>
 		<p>
-			<a href="/blog/2024/2024.05.15.phone/">
-				<h2>2024-05-15</h2>
+			<a href="/blog/2024/2024-06-20.01.remember/">
+				<h2>I remembered I had a blog</h2>
+			</a>
+		</p>
+		<p>
+			<time>2024-06-20</time>
+		</p>
+
+		<div>
+			<p>I just remembered I can write stuff here!</p>
+<p>I've been busy. Went on a 2-week road trip to the Washington/Oregon area
+and have been busy preparing music for various performances.</p>
+<p>So um I made a six-knob MIDI controller housed in a Panera
+food container.</p>
+<img src="/img/JUGHueBm4Q-600.png" alt="arduino" />
+<img src="/img/G0DYswv10T-600.png" alt="panera" />
+<p>The code is silly easy (warning: only works with USB-MIDI Arduino boards like
+the Arduino Micro):</p>
+<pre><code>#include &lt;MIDIUSB.h&gt;
+
+int analogValues[6];
+const uint8_t midiChannel = 1;
+
+void setup() {
+  analogValues[0] = 0;
+  analogValues[1] = 0;
+  analogValues[2] = 0;
+  analogValues[3] = 0;
+  analogValues[4] = 0;
+  analogValues[5] = 0;
+}
+
+int readAnalogValue(int pin, int index) {
+  int potValue = analogRead(pin);
+  int midiValue = map(potValue, 0, 1023, 0, 127);
+  if (analogValues[index] != midiValue) {
+    analogValues[index] = midiValue;    
+    sendControlChange(midiChannel, index + 1, midiValue);
+  }
+}
+
+void loop() {
+
+  readAnalogValue(A0, 0);
+  readAnalogValue(A1, 1);
+  readAnalogValue(A2, 2);
+  readAnalogValue(A3, 3);
+  readAnalogValue(A4, 4);
+  readAnalogValue(A5, 5);
+
+  // delay to avoid flooding MIDI messages
+  delay(10);
+}
+
+void sendControlChange(uint8_t channel, uint8_t control, uint8_t value) {
+  midiEventPacket_t event = {0x0B, 0xB0 | (channel - 1), control, value};
+  MidiUSB.sendMIDI(event);
+  MidiUSB.flush();
+}
+</code></pre>
+
+		</div>
+	</article>
+	<article>
+		<p class="separator">
+			___</p>
+		<p>
+			<a href="/blog/2024/2024-05-15.phone/">
+				<h2>posting from phone</h2>
 			</a>
 		</p>
 		<p>
@@ -933,7 +1000,7 @@ many paragraphs. No idea what to expect.</p>
 			</main>
 
 			<footer>&copy; Copyright 2024 Mike Hodnick. 
-				Unauthorized duplication may result in drowsiness.
+				Unauthorized duplication may result in decreased strength.
 			</footer>
 
 		</div>
