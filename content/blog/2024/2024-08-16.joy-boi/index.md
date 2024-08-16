@@ -5,6 +5,8 @@ draft: true
 
 I built a dual-joystick MIDI controller, dubbed The Joy Boi MK2.
 
+### Overview
+
 {% image "step.jpg" %}
 
 {% image "toad.jpg" %}
@@ -32,6 +34,10 @@ The MK1 had more knobs, was housed in a clear food container, and had
 blinking LEDs inside. I actually used it in a performance, and it
 immediately broke when I brought it home; that thing was very close
 to dying while on stage!
+
+There was actually a MK0 predecessor too, which was also used at a performance:
+
+{% image "mk0.jpg" %}
 
 ### Modular design with a base board
 
@@ -152,6 +158,14 @@ At this point, everything was finally assembled:
 
 {% image "peek.jpg" %}
 
+Another thing I chose to add was some hook-and-loop tape
+to keep the microcontroller board fastened to the bottom
+of the housing:
+
+{% image "hook-and-loop1.jpg" %}
+{% image "hook-and-loop2.jpg" %}
+
+
 ### The Code
 
 This was the easy part!
@@ -167,6 +181,105 @@ Simply, the potentiometers were attached to analog input pins,
 the switches attached to digital input pins (mode: `INPUT_PULLUP`),
 and the LEDs attached to digital PWM pins.
 
+By using pins that were adjacent to each other, I was able to 
+just use some loops to loop through each input/output pin.
+
 ```
-code here
+const int ZERO = 0;
+const int ANALOG_MAX_VALUE = 1023;
+const int MIDI_MAX_VALUE = 127;
+const int NUM_INPUTS = 6;
+
+// pins for Teensy 4.1 configuration:
+const int ANALOG_START_PIN = 14;
+const int LED_START_PIN = 2;
+const int ON_OFF_LED = 8;
+const int ON_OFF_PIN = 10;
+const int THREE_MODE_PIN1 = 11;
+const int THREE_MODE_PIN2 = 12;
+const int MODE_LED = 9;
+const int LED_MAX_BRIGHTNESS = 15;
+
+int midiValues[NUM_INPUTS] = { 0, 0, 0, 0, 0, 0 };
+
+// reverse some of the inputs because of how I installed the joysticks:
+const int analogInputDirections[NUM_INPUTS] = { -1, 1, 1, -1, 1, 1 };
+
+void setup() {
+  Serial.begin(9600);
+  for (int i = 0; i < NUM_INPUTS; i++) {
+    pinMode(i + LED_START_PIN, OUTPUT);
+  }
+
+  pinMode(ON_OFF_PIN, INPUT_PULLUP);
+  pinMode(THREE_MODE_PIN1, INPUT_PULLUP);
+  pinMode(THREE_MODE_PIN2, INPUT_PULLUP);
+}
+
+void loop() {
+
+  bool on = digitalRead(ON_OFF_PIN) == 1;
+  bool mode1On = digitalRead(THREE_MODE_PIN1);
+  bool mode2On = digitalRead(THREE_MODE_PIN2);
+
+  // LED for on/off switch
+  analogWrite(ON_OFF_LED, on ? 100 : ZERO);
+
+  // LED for 3-mode switch
+  analogWrite(MODE_LED, mode1On && mode2On ? 15 : mode1On ? 100
+                                                          : ZERO);
+
+  for (int i = 0; i < NUM_INPUTS; i++) {
+    int analogValue = analogInputDirections[i] == 1
+                        ? analogRead(i + ANALOG_START_PIN)
+                        : map(analogRead(i + ANALOG_START_PIN), ANALOG_MAX_VALUE, ZERO, ZERO, ANALOG_MAX_VALUE);
+
+    int midiValue = map(analogValue, ZERO, ANALOG_MAX_VALUE, ZERO, MIDI_MAX_VALUE);
+
+    // only send out a MIDI CC signal
+    // if it has in fact changed
+    if (midiValue != midiValues[i]) {
+      midiValues[i] = midiValue;
+
+      // send out MIDI controller signal
+      if (on) {
+        usbMIDI.sendControlChange(i + 1, midiValues[i], 1);
+      }
+    }
+
+
+    // write LED brightness
+    if (on) {
+      analogWrite(i + LED_START_PIN, map(midiValues[i], 0, MIDI_MAX_VALUE, 0, LED_MAX_BRIGHTNESS));
+    }
+  }
+
+  // Serial.println("");
+  delay(20);
+}
 ```
+
+### Conclusion
+
+I have learned _a ton_ about DIY electronics projects since taking on the 
+MK0, MK1, and MK2. It was difficult to learn how to design a build that
+was pluggable and modular; there aren't a lot of good tutorials on this stuff!
+
+Things I like about the build:
+
+- pluggable and modular, so I can keep making mods or swap out parts
+- Teensy 4.1 is so much more capable than the Arduino Micro. So many more inputs and outputs.
+- sturdy case, with USB power plug
+
+Things I dislike about the build:
+
+- jumper cables were really annoying to add to my components
+- kind of messy inside
+- case is a bit tall
+
+Jumper cables, or screw terminal blocks seem like the way to go if you want to
+disconnect your components from your build. But...  they have been awkward to
+work with too.
+
+A custom PCB would resolve some messiness, especially if I could just surface-mount
+everything. 
