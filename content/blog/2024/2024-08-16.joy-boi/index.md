@@ -1,6 +1,5 @@
 ---
 title: Building the Joy Boi MK2
-draft: true
 ---
 
 I built a dual-joystick MIDI controller, dubbed The Joy Boi MK2.
