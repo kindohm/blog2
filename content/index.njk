@@ -2,29 +2,14 @@
 layout: layouts/home.njk
 ---
 
-<div>
-	<h1>
-		<a href="https://kindohm.com">Mike Hodnick's</a> blog.</h1>
-	<h3 class="no-before">
-		<a href="/why">why?</a>
-	</h3>
-</div>
-
-{%- for entry in collections.posts | reverse%}
-	<article>
-		<p class="separator">
-			___</p>
-		<p>
+<ul class="toc">
+	{%- for entry in collections.posts | reverse%}
+		<li class="toc">
 			<a href="{{ entry.url }}">
-				<h2>{{ entry.data | realTitle }}</h2>
-			</a>
-		</p>
-		<p>
+				<h2 class="toc">{{ entry.data | realTitle }}</h2>
+			</a><br/>
 			<time>{{ entry.date | htmlDateString }}</time>
-		</p>
 
-		<div>
-			{{entry.content | safe}}
-		</div>
-	</article>
-{%- endfor %}
+		</li>
+	{%- endfor %}
+</ul>

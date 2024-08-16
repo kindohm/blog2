@@ -33,7 +33,10 @@ const getCombo = () => {
   return ideals[0];
 };
 
-const { foreground, background } = getCombo();
+const { foreground, background } = {
+  background: "#3A424A",
+  foreground: "#ddeeee",
+}; // getCombo();
 
 console.log("colors:", { foreground, background });
 

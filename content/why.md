@@ -3,10 +3,8 @@ title: why
 layout: layouts/base.njk
 ---
 
-This blog is basically a place to dump
-thoughts so that I can remember them
-later.
+This is a place for me to dump thoughts so that I can remember them later.
 
-    <p>
-        <a href="/">&lt; go back</a>
-    </p>
+I'm also trying to write more, and get better at it.
+
+If you're looking for my music, visit https://kindohm.com.
