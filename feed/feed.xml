@@ -21,8 +21,8 @@
 and have been busy preparing music for various performances.&lt;/p&gt;
 &lt;p&gt;So um I made a six-knob MIDI controller housed in a Panera
 food container.&lt;/p&gt;
-&lt;img src=&quot;https://kindohm.com/img/JUGHueBm4Q-600.png&quot; alt=&quot;arduino&quot;&gt;
-&lt;img src=&quot;https://kindohm.com/img/G0DYswv10T-600.png&quot; alt=&quot;panera&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/JUGHueBm4Q-900.png&quot; alt=&quot;arduino&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/G0DYswv10T-900.png&quot; alt=&quot;panera&quot;&gt;
 &lt;p&gt;The code is silly easy (warning: only works with USB-MIDI Arduino boards like
 the Arduino Micro):&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;#include &amp;lt;MIDIUSB.h&amp;gt;
@@ -153,7 +153,7 @@ python3 ~/code/bandcamp-downloader/bandcamp-downloader.py &lt;span class=&quot;t
 		<updated>2024-04-06T00:00:00Z</updated>
 		<id>https://kindohm.com/blog/2024/2024-04-06.02.mobile-recording/</id>
 		<content type="html">&lt;p&gt;Mobile setup in the wild.&lt;/p&gt;
-&lt;img src=&quot;https://kindohm.com/img/Y3u4PbIVoG-600.png&quot; alt=&quot;in the wild&quot;&gt;</content>
+&lt;img src=&quot;https://kindohm.com/img/Y3u4PbIVoG-900.png&quot; alt=&quot;in the wild&quot;&gt;</content>
 	</entry>
 	
 	<entry>
@@ -286,7 +286,7 @@ and it works 🤙🏻&lt;/p&gt;
 		<updated>2024-03-13T00:00:00Z</updated>
 		<id>https://kindohm.com/blog/2024/2024-03-13.01.battery-bank/</id>
 		<content type="html">&lt;p&gt;Just picked up a battery bank with an AC plug:&lt;/p&gt;
-&lt;img src=&quot;https://kindohm.com/img/FQ1LLSUnsZ-600.png&quot; alt=&quot;battery bank&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/FQ1LLSUnsZ-900.png&quot; alt=&quot;battery bank&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;https://chargetech.com/products/premium-27k-ac-battery-pack&quot;&gt;got it from Chargetech&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Been inspired by some of Bogdan Raczynski&#39;s posts about
 making music with your environment. We&#39;ll see how it goes.&lt;/p&gt;
@@ -594,7 +594,7 @@ feeds using the &lt;code&gt;@11ty/eleventy-plugin-rss&lt;/code&gt; library.&lt;/
 &lt;h3 id=&quot;mobile-screen-sizes&quot; tabindex=&quot;-1&quot;&gt;mobile / screen sizes &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;There&#39;s no nav, columns, or anything funky about the layout here, so
 it just fine on a mobile screen out of the box:&lt;/p&gt;
-&lt;img src=&quot;https://kindohm.com/img/BUy4_ydavp-600.png&quot; alt=&quot;mobile view&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/BUy4_ydavp-900.png&quot; alt=&quot;mobile view&quot;&gt;
 &lt;h3 id=&quot;colocated-images&quot; tabindex=&quot;-1&quot;&gt;colocated images &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-02-27.02.this-blog/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Colocating images with posts in Eleventy wasn&#39;t intuitive to figure
 out. I referenced these items to accomplish it:&lt;/p&gt;
