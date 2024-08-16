@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Building the Joy Boi MK2</title>
+		<meta name="description" content="Dropping stuff here so I don&#39;t forget.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mike Hodnick&#39;s Blog">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mike Hodnick&#39;s Blog">
+		<style>
+			* { box-sizing: border-box; }
+body {
+  font-family: monospace;
+  text-align: center;
+  color: #444;
+  line-height: 1.5rem;
+}
+
+body,
+p,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+}
+
+.container {
+  margin: auto;
+  text-align: left;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+article img {
+  max-width: 100%;
+}
+
+.feed {
+  margin-left: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1rem;
+  font-weight: normal;
+  font-family: serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 4rem;
+}
+
+h2.toc {
+  margin: 0;
+  display: inline;
+}
+
+h3 {
+  font-size: 32px;
+  margin-top: 4rem;
+}
+
+pre {
+  background-color: #eee;
+  padding: 0.5rem;
+  overflow-x: auto;
+}
+
+code {
+  background-color: #eee;
+  color: #ff6666;
+}
+
+pre code {
+  color: #444;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 10px;
+}
+
+.no-before::before {
+  content: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+p {
+  margin-top: 1.5rem;
+}
+
+.separator {
+  margin-top: 4rem;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+time {
+  font-size: 0.75rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header h1 {
+  display: inline;
+}
+
+header h3 {
+  display: inline;
+  margin-left: 2rem;
+}
+
+ul.toc {
+  padding: 0;
+  padding-left: 1rem;
+}
+
+blockquote {
+  border-left: solid 3px #ddeeee;
+  margin: 0px;
+  padding-left: 1rem;
+  font-style: italic;
+}
+code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
+		</style>
+		<style>
+			body {
+				color: #ddeeee;
+				background-color: #3A424A;
+			}
+
+			a,
+			a:active,
+			a:link,
+			a:visited {
+				color: #ddeeee;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+			<header>
+				<h1>
+					<a href="/">Mike Hodnick's</a> blog.</h1>
+				<span class="feed no-before">
+					<a href="/feed/feed.xml">feed.xml</a>
+				</span>
+			</header>
+
+			<main id="skip">
+				
+<article>
+	<h2>
+		<a href="">Building the Joy Boi MK2</a>
+	</h2>
+	<p>
+		<time>Friday, 16 August 2024</time>
+	</p>
+	<p>I built a dual-joystick MIDI controller, dubbed The Joy Boi MK2.</p>
+<h3 id="overview" tabindex="-1">Overview <a class="header-anchor" href="#overview">#</a></h3>
+<img src="/img/zrNyjB40BS-900.png" alt="undefined" />
+<img src="/img/Ioht-BWKrQ-900.png" alt="undefined" />
+<p>It's a six axis controller, specifically designed for controlling
+the X/Y/Z control surface on two instances of my Harmor synth.</p>
+<p>Each axis has a dedicated LED light that increases in brightness as
+the value on the axis increases.</p>
+<p>The controller also has two switches: one to enable/disable the controller
+(sometimes it's noisy and sends out MIDI messages more often than I want)
+and another that is a 3-way mode switch (not using it yet).</p>
+<h3 id="the-mk1-predecessor" tabindex="-1">The MK1 predecessor <a class="header-anchor" href="#the-mk1-predecessor">#</a></h3>
+<p>You might be asking, why is this the MK2? That's because there was
+a predecessor that was much more crude:</p>
+<img src="/img/Hd78MJcamG-900.png" alt="undefined" />
+<img src="/img/EXlVUnbh1X-900.png" alt="undefined" />
+<p>The MK1 had more knobs, was housed in a clear food container, and had
+blinking LEDs inside. I actually used it in a performance, and it
+immediately broke when I brought it home; that thing was very close
+to dying while on stage!</p>
+<p>There was actually a MK0 predecessor too, which was also used at a performance:</p>
+<img src="/img/eD-dBirbui-900.png" alt="undefined" />
+<h3 id="modular-design-with-a-base-board" tabindex="-1">Modular design with a base board <a class="header-anchor" href="#modular-design-with-a-base-board">#</a></h3>
+<p>So how the heck did I build this thing?</p>
+<blockquote>
+<p>NOTE: I ended up switching to a Teensy 4.1 microcontroller board
+at the end of this project. All photos here are of an Arduino Micro.
+Functionally, it's nearly the same thing, so read on.</p>
+</blockquote>
+<p>I wanted this build to be <em>flexible</em>. I didn't want to solder wires
+directly to the microcontroller. Instead, I envisioned a set of
+header pins that I could plug everything into. So, the first step
+was to mount the microcontroller on a solderable prototype board.</p>
+<p>I used prototype boards made by EPLZON. They're available on
+Amazon, but try to support a local shop that sells something like these.</p>
+<img src="/img/-1hHfRzrVE-900.png" alt="undefined" />
+<p>The prototype board has two inner female headers to insert the
+microcontroller. Next to those headers are male headers to
+attach jumper cables from components (e.g. potentiometers and LEDs).
+I also added power and ground bus headers to the power and
+ground rows.</p>
+<p>The microcontroller is nice and neat inserted into the female headers:</p>
+<img src="/img/aclnKCzqcP-900.png" alt="undefined" />
+<p>Now I could use jumper wires for all of my connections.</p>
+<h3 id="joysticks" tabindex="-1">Joysticks <a class="header-anchor" href="#joysticks">#</a></h3>
+<p>The joysticks are made by Adafruit, and are available at
+<a href="https://www.adafruit.com/product/3102">https://www.adafruit.com/product/3102</a>.</p>
+<img src="/img/aMo-6PMZMv-900.png" alt="undefined" />
+<p>A single joystick is just two potentiometers. I modified the joysticks
+to not spring back to their center point by removing the small
+tension springs inside.</p>
+<h3 id="jumper-connections" tabindex="-1">Jumper connections <a class="header-anchor" href="#jumper-connections">#</a></h3>
+<p>I realized too late that I didn't want to build my own jumper wire
+connectors. I had already soldered wires to my potentiometers, so
+I needed to figure something out.</p>
+<p>I ended up buying a few ribbon cables that already had the connectors
+attached to each hook-up wire. Then, I soldered the hook-up wire to
+the wires on the potentiometers:</p>
+<img src="/img/fsh48O-KJC-900.png" alt="undefined" />
+<p>I do NOT recommend doing it this way! Splicing wires together is
+not fun work, and my connections broke a few times.</p>
+<p>Instead, consider soldering the ribbon cable hook-up wire directly to
+your components, or just attach your own Dupont connectors.</p>
+<p>In the end, I was able to just plug everything in to the prototype board:</p>
+<img src="/img/oR46hlvdS--900.png" alt="undefined" />
+<h3 id="leds-and-switches" tabindex="-1">LEDs and Switches <a class="header-anchor" href="#leds-and-switches">#</a></h3>
+<p>I wanted to mount my LEDs neatly on the top panel of my controller,
+so I got some LED holders.</p>
+<p>I wanted each LED to be a complete component with free jumper wires
+and a built-in resistor. I soldered the LEDs, resistor, and
+hook-up wire with connectors all together, using heat shrink
+tubing to help keep things stable:</p>
+<img src="/img/88-31jqeBq-900.png" alt="undefined" />
+<p>The switches were pretty trivial:</p>
+<img src="/img/EYMwkbQbKs-900.png" alt="undefined" />
+<h3 id="housing" tabindex="-1">Housing <a class="header-anchor" href="#housing">#</a></h3>
+<p>For the housing, I found a plastic 6&quot; x 6&quot; electrical project box.
+I set my components on top and tried to estimate where everything
+should go:</p>
+<img src="/img/SAKMi9tnMH-900.png" alt="undefined" />
+<p>With a little bit of measuring and eye-balling, I drilled the holes
+in the top panel:</p>
+<img src="/img/OXe_P0uzfY-900.png" alt="undefined" />
+<p>I highly recommend using a Forstner bit for large holes in plastic:</p>
+<img src="/img/FDGVL6AEEV-900.png" alt="undefined" />
+<p>Next I drilled a hole and mounted a micro USB plug. I receives
+a micro USB plug from the outside, and plugs into the micro USB
+input of the microcontroller on the inside.</p>
+<img src="/img/PivjblejyQ-900.png" alt="undefined" />
+<img src="/img/v2jgS6R2Ay-900.png" alt="undefined" />
+<p>Next I mounted everything onto the top face:</p>
+<img src="/img/vbNGTtjlmd-900.png" alt="undefined" />
+<img src="/img/bQnGN8x_H6-900.png" alt="undefined" />
+<p>At this point I had a problem: I didn't leave enough clearance for
+the mounting ring for one of the joysticks. It was covering
+the hole of one of the LEDs. I used a Dremel to remove some of the
+mounting ring material and make room for the LED holder.</p>
+<img src="/img/O4zJ3S0WxY-900.png" alt="undefined" />
+<p>At this point, everything was finally assembled:</p>
+<img src="/img/lLm3eQMf7I-900.png" alt="undefined" />
+<p>Another thing I chose to add was some hook-and-loop tape
+to keep the microcontroller board fastened to the bottom
+of the housing:</p>
+<img src="/img/uaGb2kEodj-900.png" alt="undefined" />
+<img src="/img/HjKza-FTUq-900.png" alt="undefined" />
+<h3 id="the-code" tabindex="-1">The Code <a class="header-anchor" href="#the-code">#</a></h3>
+<p>This was the easy part!</p>
+<p>Here's an inventory of all the inputs and outputs:</p>
+<ul>
+<li>Six potentionmeters (two 2-axis joysticks plus two regular potentiometers)</li>
+<li>One two-way switch</li>
+<li>One three-way switch</li>
+<li>Eight LEDs (one for each potentiometer and switch)</li>
+</ul>
+<p>Simply, the potentiometers were attached to analog input pins,
+the switches attached to digital input pins (mode: <code>INPUT_PULLUP</code>),
+and the LEDs attached to digital PWM pins.</p>
+<p>By using pins that were adjacent to each other, I was able to
+just use some loops to loop through each input/output pin.</p>
+<pre><code>const int ZERO = 0;
+const int ANALOG_MAX_VALUE = 1023;
+const int MIDI_MAX_VALUE = 127;
+const int NUM_INPUTS = 6;
+
+// pins for Teensy 4.1 configuration:
+const int ANALOG_START_PIN = 14;
+const int LED_START_PIN = 2;
+const int ON_OFF_LED = 8;
+const int ON_OFF_PIN = 10;
+const int THREE_MODE_PIN1 = 11;
+const int THREE_MODE_PIN2 = 12;
+const int MODE_LED = 9;
+const int LED_MAX_BRIGHTNESS = 15;
+
+int midiValues[NUM_INPUTS] = { 0, 0, 0, 0, 0, 0 };
+
+// reverse some of the inputs because of how I installed the joysticks:
+const int analogInputDirections[NUM_INPUTS] = { -1, 1, 1, -1, 1, 1 };
+
+void setup() {
+  Serial.begin(9600);
+  for (int i = 0; i &lt; NUM_INPUTS; i++) {
+    pinMode(i + LED_START_PIN, OUTPUT);
+  }
+
+  pinMode(ON_OFF_PIN, INPUT_PULLUP);
+  pinMode(THREE_MODE_PIN1, INPUT_PULLUP);
+  pinMode(THREE_MODE_PIN2, INPUT_PULLUP);
+}
+
+void loop() {
+
+  bool on = digitalRead(ON_OFF_PIN) == 1;
+  bool mode1On = digitalRead(THREE_MODE_PIN1);
+  bool mode2On = digitalRead(THREE_MODE_PIN2);
+
+  // LED for on/off switch
+  analogWrite(ON_OFF_LED, on ? 100 : ZERO);
+
+  // LED for 3-mode switch
+  analogWrite(MODE_LED, mode1On &amp;&amp; mode2On ? 15 : mode1On ? 100
+                                                          : ZERO);
+
+  for (int i = 0; i &lt; NUM_INPUTS; i++) {
+    int analogValue = analogInputDirections[i] == 1
+                        ? analogRead(i + ANALOG_START_PIN)
+                        : map(analogRead(i + ANALOG_START_PIN), ANALOG_MAX_VALUE, ZERO, ZERO, ANALOG_MAX_VALUE);
+
+    int midiValue = map(analogValue, ZERO, ANALOG_MAX_VALUE, ZERO, MIDI_MAX_VALUE);
+
+    // only send out a MIDI CC signal
+    // if it has in fact changed
+    if (midiValue != midiValues[i]) {
+      midiValues[i] = midiValue;
+
+      // send out MIDI controller signal
+      if (on) {
+        usbMIDI.sendControlChange(i + 1, midiValues[i], 1);
+      }
+    }
+
+
+    // write LED brightness
+    if (on) {
+      analogWrite(i + LED_START_PIN, map(midiValues[i], 0, MIDI_MAX_VALUE, 0, LED_MAX_BRIGHTNESS));
+    }
+  }
+
+  // Serial.println(&quot;&quot;);
+  delay(20);
+}
+</code></pre>
+<h3 id="conclusion" tabindex="-1">Conclusion <a class="header-anchor" href="#conclusion">#</a></h3>
+<p>I have learned <em>a ton</em> about DIY electronics projects since taking on the
+MK0, MK1, and MK2. It was difficult to learn how to design a build that
+was pluggable and modular; there aren't a lot of good tutorials on this stuff!</p>
+<p>Things I like about the build:</p>
+<ul>
+<li>pluggable and modular, so I can keep making mods or swap out parts</li>
+<li>Teensy 4.1 is so much more capable than the Arduino Micro. So many more inputs and outputs.</li>
+<li>sturdy case, with USB power plug</li>
+</ul>
+<p>Things I dislike about the build:</p>
+<ul>
+<li>jumper cables were really annoying to add to my components</li>
+<li>kind of messy inside</li>
+<li>case is a bit tall</li>
+</ul>
+<p>Jumper cables, or screw terminal blocks seem like the way to go if you want to
+disconnect your components from your build. But...  they have been awkward to
+work with too.</p>
+<p>A custom PCB would resolve some messiness, especially if I could just surface-mount
+everything.</p>
+
+
+</article>
+			</main>
+
+			<footer>&copy; Copyright 2024 Mike Hodnick. 
+				Unauthorized duplication may result in sudden death or dismemberment.<br/><br/>
+				If you're looking for Kindohm music, visit https://kindohm.com
+			</footer>
+
+		</div>
+		<!-- Current page: /blog/2024/2024-08-16.joy-boi/ -->
+	</body>
+</html>

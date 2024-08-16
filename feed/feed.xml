@@ -4,12 +4,233 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-06-20T00:00:00Z</updated>
+	<updated>2024-08-16T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title>Building the Joy Boi MK2</title>
+		<link href="https://kindohm.com/blog/2024/2024-08-16.joy-boi/"/>
+		<updated>2024-08-16T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-08-16.joy-boi/</id>
+		<content type="html">&lt;p&gt;I built a dual-joystick MIDI controller, dubbed The Joy Boi MK2.&lt;/p&gt;
+&lt;h3 id=&quot;overview&quot; tabindex=&quot;-1&quot;&gt;Overview &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-16.joy-boi/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;img src=&quot;https://kindohm.com/img/zrNyjB40BS-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/Ioht-BWKrQ-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;It&#39;s a six axis controller, specifically designed for controlling
+the X/Y/Z control surface on two instances of my Harmor synth.&lt;/p&gt;
+&lt;p&gt;Each axis has a dedicated LED light that increases in brightness as
+the value on the axis increases.&lt;/p&gt;
+&lt;p&gt;The controller also has two switches: one to enable/disable the controller
+(sometimes it&#39;s noisy and sends out MIDI messages more often than I want)
+and another that is a 3-way mode switch (not using it yet).&lt;/p&gt;
+&lt;h3 id=&quot;the-mk1-predecessor&quot; tabindex=&quot;-1&quot;&gt;The MK1 predecessor &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-16.joy-boi/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You might be asking, why is this the MK2? That&#39;s because there was
+a predecessor that was much more crude:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/Hd78MJcamG-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/EXlVUnbh1X-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;The MK1 had more knobs, was housed in a clear food container, and had
+blinking LEDs inside. I actually used it in a performance, and it
+immediately broke when I brought it home; that thing was very close
+to dying while on stage!&lt;/p&gt;
+&lt;p&gt;There was actually a MK0 predecessor too, which was also used at a performance:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/eD-dBirbui-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;h3 id=&quot;modular-design-with-a-base-board&quot; tabindex=&quot;-1&quot;&gt;Modular design with a base board &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-16.joy-boi/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;So how the heck did I build this thing?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: I ended up switching to a Teensy 4.1 microcontroller board
+at the end of this project. All photos here are of an Arduino Micro.
+Functionally, it&#39;s nearly the same thing, so read on.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I wanted this build to be &lt;em&gt;flexible&lt;/em&gt;. I didn&#39;t want to solder wires
+directly to the microcontroller. Instead, I envisioned a set of
+header pins that I could plug everything into. So, the first step
+was to mount the microcontroller on a solderable prototype board.&lt;/p&gt;
+&lt;p&gt;I used prototype boards made by EPLZON. They&#39;re available on
+Amazon, but try to support a local shop that sells something like these.&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/-1hHfRzrVE-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;The prototype board has two inner female headers to insert the
+microcontroller. Next to those headers are male headers to
+attach jumper cables from components (e.g. potentiometers and LEDs).
+I also added power and ground bus headers to the power and
+ground rows.&lt;/p&gt;
+&lt;p&gt;The microcontroller is nice and neat inserted into the female headers:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/aclnKCzqcP-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;Now I could use jumper wires for all of my connections.&lt;/p&gt;
+&lt;h3 id=&quot;joysticks&quot; tabindex=&quot;-1&quot;&gt;Joysticks &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-16.joy-boi/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The joysticks are made by Adafruit, and are available at
+&lt;a href=&quot;https://www.adafruit.com/product/3102&quot;&gt;https://www.adafruit.com/product/3102&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/aMo-6PMZMv-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;A single joystick is just two potentiometers. I modified the joysticks
+to not spring back to their center point by removing the small
+tension springs inside.&lt;/p&gt;
+&lt;h3 id=&quot;jumper-connections&quot; tabindex=&quot;-1&quot;&gt;Jumper connections &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-16.joy-boi/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I realized too late that I didn&#39;t want to build my own jumper wire
+connectors. I had already soldered wires to my potentiometers, so
+I needed to figure something out.&lt;/p&gt;
+&lt;p&gt;I ended up buying a few ribbon cables that already had the connectors
+attached to each hook-up wire. Then, I soldered the hook-up wire to
+the wires on the potentiometers:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/fsh48O-KJC-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;I do NOT recommend doing it this way! Splicing wires together is
+not fun work, and my connections broke a few times.&lt;/p&gt;
+&lt;p&gt;Instead, consider soldering the ribbon cable hook-up wire directly to
+your components, or just attach your own Dupont connectors.&lt;/p&gt;
+&lt;p&gt;In the end, I was able to just plug everything in to the prototype board:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/oR46hlvdS--900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;h3 id=&quot;leds-and-switches&quot; tabindex=&quot;-1&quot;&gt;LEDs and Switches &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-16.joy-boi/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I wanted to mount my LEDs neatly on the top panel of my controller,
+so I got some LED holders.&lt;/p&gt;
+&lt;p&gt;I wanted each LED to be a complete component with free jumper wires
+and a built-in resistor. I soldered the LEDs, resistor, and
+hook-up wire with connectors all together, using heat shrink
+tubing to help keep things stable:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/88-31jqeBq-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;The switches were pretty trivial:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/EYMwkbQbKs-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;h3 id=&quot;housing&quot; tabindex=&quot;-1&quot;&gt;Housing &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-16.joy-boi/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For the housing, I found a plastic 6&amp;quot; x 6&amp;quot; electrical project box.
+I set my components on top and tried to estimate where everything
+should go:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/SAKMi9tnMH-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;With a little bit of measuring and eye-balling, I drilled the holes
+in the top panel:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/OXe_P0uzfY-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;I highly recommend using a Forstner bit for large holes in plastic:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/FDGVL6AEEV-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;Next I drilled a hole and mounted a micro USB plug. I receives
+a micro USB plug from the outside, and plugs into the micro USB
+input of the microcontroller on the inside.&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/PivjblejyQ-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/v2jgS6R2Ay-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;Next I mounted everything onto the top face:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/vbNGTtjlmd-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/bQnGN8x_H6-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;At this point I had a problem: I didn&#39;t leave enough clearance for
+the mounting ring for one of the joysticks. It was covering
+the hole of one of the LEDs. I used a Dremel to remove some of the
+mounting ring material and make room for the LED holder.&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/O4zJ3S0WxY-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;At this point, everything was finally assembled:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/lLm3eQMf7I-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;p&gt;Another thing I chose to add was some hook-and-loop tape
+to keep the microcontroller board fastened to the bottom
+of the housing:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/uaGb2kEodj-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/HjKza-FTUq-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;h3 id=&quot;the-code&quot; tabindex=&quot;-1&quot;&gt;The Code &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-16.joy-boi/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This was the easy part!&lt;/p&gt;
+&lt;p&gt;Here&#39;s an inventory of all the inputs and outputs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Six potentionmeters (two 2-axis joysticks plus two regular potentiometers)&lt;/li&gt;
+&lt;li&gt;One two-way switch&lt;/li&gt;
+&lt;li&gt;One three-way switch&lt;/li&gt;
+&lt;li&gt;Eight LEDs (one for each potentiometer and switch)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Simply, the potentiometers were attached to analog input pins,
+the switches attached to digital input pins (mode: &lt;code&gt;INPUT_PULLUP&lt;/code&gt;),
+and the LEDs attached to digital PWM pins.&lt;/p&gt;
+&lt;p&gt;By using pins that were adjacent to each other, I was able to
+just use some loops to loop through each input/output pin.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const int ZERO = 0;
+const int ANALOG_MAX_VALUE = 1023;
+const int MIDI_MAX_VALUE = 127;
+const int NUM_INPUTS = 6;
+
+// pins for Teensy 4.1 configuration:
+const int ANALOG_START_PIN = 14;
+const int LED_START_PIN = 2;
+const int ON_OFF_LED = 8;
+const int ON_OFF_PIN = 10;
+const int THREE_MODE_PIN1 = 11;
+const int THREE_MODE_PIN2 = 12;
+const int MODE_LED = 9;
+const int LED_MAX_BRIGHTNESS = 15;
+
+int midiValues[NUM_INPUTS] = { 0, 0, 0, 0, 0, 0 };
+
+// reverse some of the inputs because of how I installed the joysticks:
+const int analogInputDirections[NUM_INPUTS] = { -1, 1, 1, -1, 1, 1 };
+
+void setup() {
+  Serial.begin(9600);
+  for (int i = 0; i &amp;lt; NUM_INPUTS; i++) {
+    pinMode(i + LED_START_PIN, OUTPUT);
+  }
+
+  pinMode(ON_OFF_PIN, INPUT_PULLUP);
+  pinMode(THREE_MODE_PIN1, INPUT_PULLUP);
+  pinMode(THREE_MODE_PIN2, INPUT_PULLUP);
+}
+
+void loop() {
+
+  bool on = digitalRead(ON_OFF_PIN) == 1;
+  bool mode1On = digitalRead(THREE_MODE_PIN1);
+  bool mode2On = digitalRead(THREE_MODE_PIN2);
+
+  // LED for on/off switch
+  analogWrite(ON_OFF_LED, on ? 100 : ZERO);
+
+  // LED for 3-mode switch
+  analogWrite(MODE_LED, mode1On &amp;amp;&amp;amp; mode2On ? 15 : mode1On ? 100
+                                                          : ZERO);
+
+  for (int i = 0; i &amp;lt; NUM_INPUTS; i++) {
+    int analogValue = analogInputDirections[i] == 1
+                        ? analogRead(i + ANALOG_START_PIN)
+                        : map(analogRead(i + ANALOG_START_PIN), ANALOG_MAX_VALUE, ZERO, ZERO, ANALOG_MAX_VALUE);
+
+    int midiValue = map(analogValue, ZERO, ANALOG_MAX_VALUE, ZERO, MIDI_MAX_VALUE);
+
+    // only send out a MIDI CC signal
+    // if it has in fact changed
+    if (midiValue != midiValues[i]) {
+      midiValues[i] = midiValue;
+
+      // send out MIDI controller signal
+      if (on) {
+        usbMIDI.sendControlChange(i + 1, midiValues[i], 1);
+      }
+    }
+
+
+    // write LED brightness
+    if (on) {
+      analogWrite(i + LED_START_PIN, map(midiValues[i], 0, MIDI_MAX_VALUE, 0, LED_MAX_BRIGHTNESS));
+    }
+  }
+
+  // Serial.println(&amp;quot;&amp;quot;);
+  delay(20);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-16.joy-boi/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I have learned &lt;em&gt;a ton&lt;/em&gt; about DIY electronics projects since taking on the
+MK0, MK1, and MK2. It was difficult to learn how to design a build that
+was pluggable and modular; there aren&#39;t a lot of good tutorials on this stuff!&lt;/p&gt;
+&lt;p&gt;Things I like about the build:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pluggable and modular, so I can keep making mods or swap out parts&lt;/li&gt;
+&lt;li&gt;Teensy 4.1 is so much more capable than the Arduino Micro. So many more inputs and outputs.&lt;/li&gt;
+&lt;li&gt;sturdy case, with USB power plug&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Things I dislike about the build:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jumper cables were really annoying to add to my components&lt;/li&gt;
+&lt;li&gt;kind of messy inside&lt;/li&gt;
+&lt;li&gt;case is a bit tall&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Jumper cables, or screw terminal blocks seem like the way to go if you want to
+disconnect your components from your build. But...  they have been awkward to
+work with too.&lt;/p&gt;
+&lt;p&gt;A custom PCB would resolve some messiness, especially if I could just surface-mount
+everything.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>I remembered I had a blog</title>
