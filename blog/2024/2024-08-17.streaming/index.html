@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Mike Hodnick&#39;s Blog</title>
+		<title>Convoluted streaming/OBS setup</title>
 		<meta name="description" content="Dropping stuff here so I don&#39;t forget.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Mike Hodnick&#39;s Blog">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Mike Hodnick&#39;s Blog">
@@ -187,25 +187,75 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
 				
 <article>
 	<h2>
-		<a href=""></a>
+		<a href="">Convoluted streaming/OBS setup</a>
 	</h2>
 	<p>
-		<time>Tuesday, 09 April 2024</time>
+		<time>Saturday, 17 August 2024</time>
 	</p>
-	<p>Because I made the silly decision to randomly generate colors for
-this blog on every publish, I'm motivated to write something
-when it looks like shit to my eyes.</p>
+	<p>I really like streaming and making videos about my creative processes,
+but it's been such a chore to set up all of the audio routing.</p>
+<p>I may have finally solved this today!</p>
+<h3 id="requirements" tabindex="-1">Requirements <a class="header-anchor" href="#requirements">#</a></h3>
+<p>My audio setup includes:</p>
+<ol>
+<li>Mic input</li>
+<li>Stereo input from a drum machine</li>
+<li>Audio mixing:</li>
+</ol>
+<ul>
+<li>duck out the drum machine volume when I'm speaking through the mic</li>
+<li>add EQ, compression, and limiting</li>
+</ul>
+<ol start="4">
+<li>Monitor everything with no latency</li>
+<li>Input the final mix into OBS</li>
+</ol>
+<h3 id="the-problems" tabindex="-1">The problems <a class="header-anchor" href="#the-problems">#</a></h3>
+<p>OBS has a really terrible feature where it only records the first two channels
+of audio. My nice audio interface (a Behringer UMC1820) only accepts microphone
+inputs on channels 1-2. This means if I use my audio interface in OBS, I can
+only record my microphone and nothing else.</p>
+<p>Thus, I have to route everything to a loopback/virtual audio device. OBS can
+then listen to the inputs of that virtual audio device. I happen to use Blackhole
+on MacOS for this.</p>
+<p>So ideally:</p>
+<ul>
+<li>capture mic and drum machine input on audio interface</li>
+<li>do audio mixing</li>
+<li>output everything to Blackhole</li>
+</ul>
+<p>Unfortunately, my DAW (FL Studio) doesn't allow me to use different devices for both input and output,
+so using my DAW isn't an option for the audio mixing requirements.</p>
+<h3 id="vcv-rack-to-the-rescue" tabindex="-1">VCV Rack to the rescue <a class="header-anchor" href="#vcv-rack-to-the-rescue">#</a></h3>
+<p>Other DAWs allow you to use different audio devices for both input and output, but I
+am not interested in spending money on a new DAW, even an affordable one like Reaper.</p>
+<p>VCV Rack is a virtual modular synthesis program, but it also has sophisticated
+audio routing capabilities. The basic approach is this:</p>
+<ol>
+<li>Use an audio module that uses my UMC1820</li>
+<li>Capture input from mic on channel 1 and drum machine on channels 7 and 8.</li>
+<li>Route mic and drum machine through whatever audio processing modules I want.</li>
+<li>Send the mix to inputs 1 and 2 of another audio module that uses Blackhole</li>
+<li>Bonus: send the mix to the stereo output of the <em>first</em> audio module so I can listen to everything on headphones from the UMC1820. This is also a critical step to eliminate any latency.</li>
+</ol>
+<p>Here's a screen shot of my setup:</p>
+<img src="/img/Tj1IfY6aKh-900.png" alt="undefined" />
+<h3 id="conclusion" tabindex="-1">Conclusion <a class="header-anchor" href="#conclusion">#</a></h3>
+<p>I'm glad I thought of this solution! I've been banging my head against FL Studio for
+years when it comes to integrating my devices, signal processing, and OBS.</p>
+<p>I used to do a lot more streaming and tutorial videos about my musical processes but
+gave it up because of my challenging setup/requirements. Maybe I'll start doing it again.</p>
 
 
 </article>
 			</main>
 
 			<footer>&copy; Copyright 2024 Mike Hodnick. 
-				Unauthorized duplication may result in drowsiness.<br/><br/>
+				Unauthorized duplication may result in decreased strength.<br/><br/>
 				If you're looking for Kindohm music, visit https://kindohm.com
 			</footer>
 
 		</div>
-		<!-- Current page: /blog/2024/2024-04-09.02.colors/ -->
+		<!-- Current page: /blog/2024/2024-08-17.streaming/ -->
 	</body>
 </html>

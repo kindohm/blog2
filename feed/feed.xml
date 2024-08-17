@@ -4,12 +4,73 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-08-16T00:00:00Z</updated>
+	<updated>2024-08-17T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title>Convoluted streaming/OBS setup</title>
+		<link href="https://kindohm.com/blog/2024/2024-08-17.streaming/"/>
+		<updated>2024-08-17T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-08-17.streaming/</id>
+		<content type="html">&lt;p&gt;I really like streaming and making videos about my creative processes,
+but it&#39;s been such a chore to set up all of the audio routing.&lt;/p&gt;
+&lt;p&gt;I may have finally solved this today!&lt;/p&gt;
+&lt;h3 id=&quot;requirements&quot; tabindex=&quot;-1&quot;&gt;Requirements &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-17.streaming/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;My audio setup includes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mic input&lt;/li&gt;
+&lt;li&gt;Stereo input from a drum machine&lt;/li&gt;
+&lt;li&gt;Audio mixing:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;duck out the drum machine volume when I&#39;m speaking through the mic&lt;/li&gt;
+&lt;li&gt;add EQ, compression, and limiting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Monitor everything with no latency&lt;/li&gt;
+&lt;li&gt;Input the final mix into OBS&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;the-problems&quot; tabindex=&quot;-1&quot;&gt;The problems &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-17.streaming/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;OBS has a really terrible feature where it only records the first two channels
+of audio. My nice audio interface (a Behringer UMC1820) only accepts microphone
+inputs on channels 1-2. This means if I use my audio interface in OBS, I can
+only record my microphone and nothing else.&lt;/p&gt;
+&lt;p&gt;Thus, I have to route everything to a loopback/virtual audio device. OBS can
+then listen to the inputs of that virtual audio device. I happen to use Blackhole
+on MacOS for this.&lt;/p&gt;
+&lt;p&gt;So ideally:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;capture mic and drum machine input on audio interface&lt;/li&gt;
+&lt;li&gt;do audio mixing&lt;/li&gt;
+&lt;li&gt;output everything to Blackhole&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Unfortunately, my DAW (FL Studio) doesn&#39;t allow me to use different devices for both input and output,
+so using my DAW isn&#39;t an option for the audio mixing requirements.&lt;/p&gt;
+&lt;h3 id=&quot;vcv-rack-to-the-rescue&quot; tabindex=&quot;-1&quot;&gt;VCV Rack to the rescue &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-17.streaming/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Other DAWs allow you to use different audio devices for both input and output, but I
+am not interested in spending money on a new DAW, even an affordable one like Reaper.&lt;/p&gt;
+&lt;p&gt;VCV Rack is a virtual modular synthesis program, but it also has sophisticated
+audio routing capabilities. The basic approach is this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use an audio module that uses my UMC1820&lt;/li&gt;
+&lt;li&gt;Capture input from mic on channel 1 and drum machine on channels 7 and 8.&lt;/li&gt;
+&lt;li&gt;Route mic and drum machine through whatever audio processing modules I want.&lt;/li&gt;
+&lt;li&gt;Send the mix to inputs 1 and 2 of another audio module that uses Blackhole&lt;/li&gt;
+&lt;li&gt;Bonus: send the mix to the stereo output of the &lt;em&gt;first&lt;/em&gt; audio module so I can listen to everything on headphones from the UMC1820. This is also a critical step to eliminate any latency.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here&#39;s a screen shot of my setup:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/Tj1IfY6aKh-900.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;h3 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://kindohm.com/blog/2024/2024-08-17.streaming/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I&#39;m glad I thought of this solution! I&#39;ve been banging my head against FL Studio for
+years when it comes to integrating my devices, signal processing, and OBS.&lt;/p&gt;
+&lt;p&gt;I used to do a lot more streaming and tutorial videos about my musical processes but
+gave it up because of my challenging setup/requirements. Maybe I&#39;ll start doing it again.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Building the Joy Boi MK2</title>
