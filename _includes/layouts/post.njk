@@ -3,10 +3,11 @@ layout: layouts/base.njk
 ---
 
 <article>
+<a href="{{ post.url }}">
 	<h2>
-		<a href="{{ post.url }}">{{ title }}</a>
-	</h2>
-	<p>
+		{{ title }}
+	</h2></a>
+	<p class="ptime">
 		<time>{{ page.date | htmlDateString }}</time>
 	</p>
 	{{ content  | safe }}

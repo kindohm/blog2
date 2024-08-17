@@ -29,7 +29,7 @@ article img {
   max-width: 100%;
 }
 
-.header-link {
+.header-link:not(:first-child) {
   margin-left: 1rem;
 }
 
@@ -48,6 +48,8 @@ h1 {
 h2 {
   font-size: 36px;
   margin-top: 4rem;
+  line-height: 2rem;
+  margin-bottom: 0;
 }
 
 h2.toc {
@@ -110,14 +112,8 @@ time {
   font-size: 0.75rem;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 header h1 {
-  display: inline;
+  line-height: 3rem;
 }
 
 header h3 {
@@ -127,6 +123,7 @@ header h3 {
 
 ul.toc {
   padding: 0;
+  margin-top: 4rem;
 }
 
 ul.toc li {
@@ -140,4 +137,26 @@ blockquote {
   margin: 0px;
   padding-left: 1rem;
   font-style: italic;
+}
+
+.ptime {
+  margin-top: 0.45rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-top: 4rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-top: 4rem;
+  }
 }
