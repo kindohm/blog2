@@ -162,7 +162,7 @@ in the top panel:&lt;/p&gt;
 &lt;img src=&quot;https://kindohm.com/img/OXe_P0uzfY-900.png&quot; alt=&quot;undefined&quot;&gt;
 &lt;p&gt;I highly recommend using a Forstner bit for large holes in plastic:&lt;/p&gt;
 &lt;img src=&quot;https://kindohm.com/img/FDGVL6AEEV-900.png&quot; alt=&quot;undefined&quot;&gt;
-&lt;p&gt;Next I drilled a hole and mounted a micro USB plug. I receives
+&lt;p&gt;Next I drilled a hole and mounted a micro USB plug. The socket receives
 a micro USB plug from the outside, and plugs into the micro USB
 input of the microcontroller on the inside.&lt;/p&gt;
 &lt;img src=&quot;https://kindohm.com/img/PivjblejyQ-900.png&quot; alt=&quot;undefined&quot;&gt;
@@ -286,7 +286,7 @@ was pluggable and modular; there aren&#39;t a lot of good tutorials on this stuf
 &lt;li&gt;case is a bit tall&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Jumper cables, or screw terminal blocks seem like the way to go if you want to
-disconnect your components from your build. But...  they have been awkward to
+disconnect your components from your build. But... they have been awkward to
 work with too.&lt;/p&gt;
 &lt;p&gt;A custom PCB would resolve some messiness, especially if I could just surface-mount
 everything.&lt;/p&gt;
