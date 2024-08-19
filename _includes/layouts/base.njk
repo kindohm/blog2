@@ -55,13 +55,13 @@
 			<header>
 				<h1>
 					<a href="/">Mike Hodnick's</a> blog</h1>
-					<div class="nav">
-				<span class="header-link no-before">
-					<a href="/about">about</a>
-				</span>
-				<span class="header-link no-before">
-					<a href="/feed/feed.xml">feed.xml</a>
-				</span>
+				<div class="nav">
+					<span class="header-link no-before">
+						<a href="/about">about</a>
+					</span>
+					<span class="header-link no-before">
+						<a href="/feed/feed.xml">feed.xml</a>
+					</span>
 				</div>
 			</header>
 
@@ -69,9 +69,10 @@
 				{{ content | safe }}
 			</main>
 
-			<footer>&copy; Copyright 2024 Mike Hodnick. 
-				Unauthorized duplication may result in {{ metadata.risks | random }}.<br/><br/>
-				If you're looking for Kindohm music, visit https://kindohm.com
+			<footer>
+				<p>&copy; Copyright 2024 Mike Hodnick. 
+				Unauthorized duplication may result in {{ metadata.risks | random }}.</p>
+				<p>If you're looking for Kindohm music, visit <a href="https://kindohm.com">kindohm.com</a>.</p>
 			</footer>
 
 		</div>
