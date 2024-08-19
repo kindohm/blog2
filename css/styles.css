@@ -79,6 +79,10 @@ pre code {
 
 footer {
   margin-top: 4rem;
+  border-top: solid 1px #ddeeee;
+}
+
+footer p {
   font-size: 10px;
 }
 
