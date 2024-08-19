@@ -134,7 +134,7 @@ I highly recommend using a Forstner bit for large holes in plastic:
 
 {% image "bit.jpg" %}
 
-Next I drilled a hole and mounted a micro USB plug. I receives
+Next I drilled a hole and mounted a micro USB plug. The socket receives
 a micro USB plug from the outside, and plugs into the micro USB
 input of the microcontroller on the inside.
 
@@ -164,7 +164,6 @@ of the housing:
 {% image "hook-and-loop1.jpg" %}
 {% image "hook-and-loop2.jpg" %}
 
-
 ### The Code
 
 This was the easy part!
@@ -180,7 +179,7 @@ Simply, the potentiometers were attached to analog input pins,
 the switches attached to digital input pins (mode: `INPUT_PULLUP`),
 and the LEDs attached to digital PWM pins.
 
-By using pins that were adjacent to each other, I was able to 
+By using pins that were adjacent to each other, I was able to
 just use some loops to loop through each input/output pin.
 
 ```
@@ -260,7 +259,7 @@ void loop() {
 
 ### Conclusion
 
-I have learned _a ton_ about DIY electronics projects since taking on the 
+I have learned _a ton_ about DIY electronics projects since taking on the
 MK0, MK1, and MK2. It was difficult to learn how to design a build that
 was pluggable and modular; there aren't a lot of good tutorials on this stuff!
 
@@ -277,8 +276,8 @@ Things I dislike about the build:
 - case is a bit tall
 
 Jumper cables, or screw terminal blocks seem like the way to go if you want to
-disconnect your components from your build. But...  they have been awkward to
+disconnect your components from your build. But... they have been awkward to
 work with too.
 
 A custom PCB would resolve some messiness, especially if I could just surface-mount
-everything. 
+everything.
