@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://kindohm.com/blog/2024/2024-09-09.sd/",
+			"url": "https://kindohm.com/blog/2024/2024-09-09.sd/",
+			"title": "Stable Diffusion",
+			"content_html": "<p>Been playing a lot with Stable Diffusion:</p>\n<img src=\"https://kindohm.com/img/wkb8Gq2H9S-600.png\" alt=\"undefined\">\n<img src=\"https://kindohm.com/img/oX9vj_m7P7-600.png\" alt=\"undefined\">\n<img src=\"https://kindohm.com/img/IYNsIGkdZ7-600.png\" alt=\"undefined\">\n",
+			"date_published": "2024-09-09T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://kindohm.com/blog/2024/2024-08-17.streaming/",
 			"url": "https://kindohm.com/blog/2024/2024-08-17.streaming/",
 			"title": "Convoluted streaming/OBS setup",

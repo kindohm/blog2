@@ -4,12 +4,24 @@
 	<subtitle>Dropping stuff here so I don&#39;t forget.</subtitle>
 	<link href="https://kindohm.com/feed/feed.xml" rel="self"/>
 	<link href="https://kindohm.com/"/>
-	<updated>2024-08-17T00:00:00Z</updated>
+	<updated>2024-09-09T00:00:00Z</updated>
 	<id>https://kindohm.com/</id>
 	<author>
 		<name>Mike Hodnick</name>
 		<email>mike@kindohm.com</email>
 	</author>
+	
+	<entry>
+		<title>Stable Diffusion</title>
+		<link href="https://kindohm.com/blog/2024/2024-09-09.sd/"/>
+		<updated>2024-09-09T00:00:00Z</updated>
+		<id>https://kindohm.com/blog/2024/2024-09-09.sd/</id>
+		<content type="html">&lt;p&gt;Been playing a lot with Stable Diffusion:&lt;/p&gt;
+&lt;img src=&quot;https://kindohm.com/img/wkb8Gq2H9S-600.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/oX9vj_m7P7-600.png&quot; alt=&quot;undefined&quot;&gt;
+&lt;img src=&quot;https://kindohm.com/img/IYNsIGkdZ7-600.png&quot; alt=&quot;undefined&quot;&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Convoluted streaming/OBS setup</title>
